@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Game of Events — Kerr's Event, the Situationist Situation, and the Act of Rebranding</title>
+<meta name="description" content="Iain Kerr's event, the Situationist constructed situation, and Daniel Monroy's act of rebranding — with an answer to whether the agency we protect must be visible, or only retained in its conditions. Mark Downham · Principia Humanitatis.">
+<meta name="author" content="Mark Downham">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A Game of Events">
+<meta property="og:description" content="Not visible, but legible. Shì at forty feet; lǐ at five hundred.">
+<meta property="og:site_name" content="Principia Humanitatis">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#02040f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#02040f; --ink:#050a24; --deep:#0a1650; --electric:#2f7bff; --volt:#4fa3ff;
+  --glow:#9fd6ff; --white:#eaf5ff; --dim:#8aa3cf; --red:#e2342b; --rule:rgba(79,163,255,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#0d1d6e 0%,#050a24 45%,#02040f 100%) fixed;color:var(--white);
+  font:400 1.12rem/1.72 "EB Garamond",Georgia,serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.palimpsest{position:fixed;inset:-20%;z-index:0;pointer-events:none;opacity:.055;transform:rotate(-9deg);
+  font:italic 1.5rem/1.9 "EB Garamond","Noto Serif TC",serif;color:#9fc4ff;filter:blur(.6px);text-align:justify;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%)}
+main,header,footer,nav{position:relative;z-index:1}
+.glow{color:#f2f9ff;text-shadow:0 0 6px rgba(120,190,255,.9),0 0 22px rgba(47,123,255,.85),0 0 60px rgba(30,80,255,.55)}
+a{color:var(--glow)}
+nav.plates{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:.2rem;flex-wrap:wrap;padding:.5rem .4rem;
+  background:linear-gradient(#02040fee,#02040fb0);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.plates a{font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.08em;text-decoration:none;color:var(--dim);padding:.28rem .5rem;border:1px solid transparent;border-radius:2px}
+nav.plates a:hover,nav.plates a.on{color:var(--white);border-color:var(--rule);text-shadow:0 0 10px var(--electric)}
+nav.plates .shi{font-family:"Noto Serif TC",serif;color:var(--red);font-size:.95rem;padding:.1rem .5rem}
+
+header.front{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.2rem 4rem}
+.masthead{font:500 .74rem "IBM Plex Mono",monospace;letter-spacing:.32em;color:var(--dim);text-transform:uppercase}
+.masthead b{color:var(--red);font-weight:500}
+.hero-wrap{position:relative;width:min(560px,92vw);aspect-ratio:1;margin:1.4rem auto .6rem;cursor:pointer}
+.hero-wrap canvas{width:100%;height:100%;display:block;animation:breathe 9s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(47,123,255,.55))}
+.hero-wrap .axis{position:absolute;left:50%;top:4%;bottom:4%;width:1px;background:linear-gradient(transparent,rgba(226,52,43,.75),transparent);opacity:.55;pointer-events:none}
+.hero-wrap .hint{position:absolute;bottom:-.2rem;left:0;right:0;font:400 .68rem "IBM Plex Mono",monospace;letter-spacing:.18em;color:var(--dim)}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.96}50%{transform:scale(1.025);opacity:1}}
+h1{font:700 clamp(2.6rem,9vw,5.6rem)/.95 "Cormorant Garamond",serif;margin:.6rem 0 .2rem;letter-spacing:.01em}
+h1 em{font-style:italic;color:#fff}
+.sub{font:italic 400 clamp(1.1rem,3.2vw,1.55rem)/1.35 "Cormorant Garamond",serif;color:var(--glow);max-width:40rem;margin:.6rem auto}
+.byline{font:500 .76rem "IBM Plex Mono",monospace;letter-spacing:.2em;color:var(--dim);margin-top:1.4rem;text-transform:uppercase}
+.redrule{width:64px;height:3px;background:var(--red);margin:1.2rem auto}
+
+main{max-width:46rem;margin:0 auto;padding:0 1.25rem 6rem}
+section{padding:4.5rem 0 2rem;border-top:1px solid var(--rule)}
+.plate-no{font:500 .78rem "IBM Plex Mono",monospace;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
+h2{font:600 clamp(2rem,6vw,3.1rem)/1.05 "Cormorant Garamond",serif;margin:.4rem 0 1.2rem}
+h3{font:600 1.45rem/1.2 "Cormorant Garamond",serif;color:var(--glow);margin:2.2rem 0 .6rem}
+p{margin:0 0 1.1rem}
+p.lede::first-letter{float:left;font:700 4.4rem/.8 "Cormorant Garamond",serif;padding:.35rem .55rem 0 0;color:#fff;text-shadow:0 0 18px var(--electric)}
+.caps{font:600 1.02rem/1.5 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 0 14px rgba(47,123,255,.8);margin:1.6rem 0;padding-left:1rem;border-left:3px solid var(--red)}
+blockquote{margin:1.6rem 0;padding:1rem 1.3rem;border-left:2px solid var(--electric);background:linear-gradient(90deg,rgba(47,123,255,.12),transparent);font-style:italic}
+blockquote cite{display:block;font:normal 400 .74rem "IBM Plex Mono",monospace;letter-spacing:.12em;color:var(--dim);margin-top:.5rem;text-transform:uppercase}
+.scripture{text-align:center;padding:2.2rem 1rem;margin:2rem 0;border:none;background:radial-gradient(ellipse at center,rgba(47,123,255,.28),transparent 70%);
+  font:italic 500 clamp(1.5rem,4.6vw,2.2rem)/1.3 "EB Garamond",serif}
+.scripture cite{font-style:normal}
+.zh{font-family:"Noto Serif TC",serif;font-style:normal}
+.zh-block{font:400 1.35rem/1.9 "Noto Serif TC",serif;text-align:center;color:#fff;text-shadow:0 0 14px var(--electric);margin:1.5rem 0 .4rem;letter-spacing:.08em}
+.zh-gloss{text-align:center;font-style:italic;color:var(--dim);font-size:1rem;margin-bottom:1.6rem}
+.big-glyph{font:700 clamp(6rem,24vw,11rem)/1 "Noto Serif TC",serif;text-align:center;color:#fff;text-shadow:0 0 20px var(--electric),0 0 70px #1f4dff;margin:1rem 0}
+.protocol{font:400 .82rem/1.55 "IBM Plex Mono",monospace;border:1px solid var(--rule);background:rgba(4,8,30,.75);padding:1rem 1.1rem;margin:1.8rem 0;position:relative}
+.protocol::before{content:attr(data-k);position:absolute;top:-.62rem;left:.8rem;background:#030616;padding:0 .5rem;color:var(--red);letter-spacing:.2em;font-size:.68rem}
+.protocol dl{display:grid;grid-template-columns:7.5rem 1fr;gap:.25rem .8rem;margin:0}
+.protocol dt{color:var(--volt)}
+.protocol dd{margin:0;color:#cfe3ff}
+.cover-read{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.2rem;font-size:1rem;margin:1.2rem 0}
+.cover-read div{border-top:1px solid var(--rule);padding-top:.5rem}
+.cover-read b{font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--volt);text-transform:uppercase;display:block}
+ol.theses{counter-reset:t;list-style:none;padding:0}
+ol.theses li{counter-increment:t;position:relative;padding:1rem 0 1rem 3.6rem;border-bottom:1px solid var(--rule)}
+ol.theses li::before{content:counter(t,upper-roman);position:absolute;left:0;top:.9rem;font:700 1.6rem "Cormorant Garamond",serif;color:var(--red);width:3rem;text-align:right}
+ol.theses li strong{font:600 .95rem/1.45 "IBM Plex Mono",monospace;letter-spacing:.04em;text-transform:uppercase;color:#fff;text-shadow:0 0 12px rgba(47,123,255,.8);display:block;margin-bottom:.3rem}
+.lab{border:1px solid var(--electric);background:rgba(5,12,45,.85);padding:1.3rem;margin:2rem 0;box-shadow:0 0 40px rgba(47,123,255,.18) inset}
+.lab textarea{width:100%;min-height:5.5rem;background:#02051a;color:var(--white);border:1px solid var(--rule);font:1.05rem "EB Garamond",serif;padding:.6rem;margin-top:.4rem;resize:vertical}
+.lab .btns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.lab button{font:500 .7rem "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;background:transparent;color:var(--white);border:1px solid var(--electric);padding:.5rem .75rem;cursor:pointer}
+.lab button:hover{background:rgba(47,123,255,.2);box-shadow:0 0 16px rgba(47,123,255,.6)}
+.lab button.red{border-color:var(--red)}
+.lab button.on{background:rgba(47,123,255,.32);box-shadow:0 0 16px rgba(47,123,255,.7);color:#fff}
+.lab button.red.on{background:rgba(226,52,43,.28);box-shadow:0 0 16px rgba(226,52,43,.6)}
+.lab .out{margin-top:1rem;font-size:1.02rem;min-height:1.5rem}
+.lab .out .code{font:600 .8rem "IBM Plex Mono",monospace;color:var(--red);letter-spacing:.14em}
+.note{font-size:.92rem;color:var(--dim)}
+footer{max-width:46rem;margin:0 auto;padding:2rem 1.25rem 5rem;border-top:1px solid var(--rule);font-size:.95rem;color:var(--dim)}
+footer h4{font:500 .74rem "IBM Plex Mono",monospace;letter-spacing:.2em;color:var(--volt);text-transform:uppercase;margin-top:2rem}
+footer ul{padding-left:1.1rem}
+footer li{margin-bottom:.3rem}
+.sign{font:italic 600 1.3rem "Cormorant Garamond",serif;color:var(--glow);text-align:center;margin:3rem 0 1rem}
+
+/* ---------- instruments ---------- */
+.instrument{margin:2.4rem -3.5rem;border:1px solid var(--electric);background:rgba(3,8,32,.9);box-shadow:0 0 50px rgba(47,123,255,.16) inset,0 0 30px rgba(47,123,255,.08);position:relative}
+.instrument::before{content:attr(data-k);position:absolute;top:-.62rem;left:.8rem;background:#030616;padding:0 .5rem;font:500 .66rem "IBM Plex Mono",monospace;color:var(--red);letter-spacing:.22em;text-transform:uppercase;z-index:2}
+.instrument .stage{position:relative}
+.instrument canvas{display:block;width:100%;touch-action:none}
+.instrument .ctrl{display:flex;flex-wrap:wrap;gap:.45rem .5rem;align-items:center;padding:.8rem 1rem;border-top:1px solid var(--rule)}
+.instrument .ctrl button{font:500 .66rem "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--white);border:1px solid var(--rule);padding:.42rem .62rem;cursor:pointer}
+.instrument .ctrl button:hover{border-color:var(--electric);box-shadow:0 0 12px rgba(47,123,255,.5)}
+.instrument .ctrl button.on{border-color:var(--electric);background:rgba(47,123,255,.28);box-shadow:0 0 14px rgba(47,123,255,.6)}
+.instrument .ctrl button.red{border-color:rgba(226,52,43,.6)}
+.instrument .ctrl button.red.on{background:rgba(226,52,43,.28);box-shadow:0 0 14px rgba(226,52,43,.6)}
+.instrument .ctrl .sep{flex-basis:100%;height:0}
+.instrument .ctrl label{font:500 .66rem "IBM Plex Mono",monospace;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;display:flex;align-items:center;gap:.5rem;flex:1 1 15rem}
+.instrument .ctrl label output{color:var(--glow);min-width:4.5rem;text-align:right}
+.instrument input[type=range]{flex:1;accent-color:var(--electric);min-width:8rem}
+.instrument .read{padding:.9rem 1.1rem 1.1rem;border-top:1px solid var(--rule);font-size:1rem;line-height:1.55;min-height:4rem}
+.instrument .read .code{font:600 .74rem "IBM Plex Mono",monospace;color:var(--red);letter-spacing:.16em;text-transform:uppercase}
+.instrument .read .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.5rem .9rem;margin:.5rem 0 .7rem}
+.instrument .read .kv div{border-top:1px solid var(--rule);padding-top:.35rem;font-size:.95rem}
+.instrument .read .kv b{display:block;font:500 .62rem "IBM Plex Mono",monospace;letter-spacing:.16em;color:var(--volt);text-transform:uppercase}
+.instrument .read .bar{height:5px;background:rgba(79,163,255,.15);margin-top:.3rem;position:relative;overflow:hidden}
+.instrument .read .bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--electric),var(--glow));box-shadow:0 0 10px var(--electric);transition:width .25s}
+.instrument .read .bar.r i{background:linear-gradient(90deg,#8a1d17,var(--red));box-shadow:0 0 10px var(--red)}
+.instrument figcaption{font:400 .68rem "IBM Plex Mono",monospace;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;padding:.6rem 1rem;border-top:1px solid var(--rule);text-align:center}
+@media (max-width:900px){.instrument{margin:2.4rem -.6rem}}
+
+.static-plate{margin:2.6rem -3.5rem;border:1px solid rgba(217,164,65,.45);background:radial-gradient(ellipse at 50% 45%,rgba(47,123,255,.16),rgba(3,8,32,.92) 70%);box-shadow:0 0 50px rgba(47,123,255,.12) inset,0 0 40px rgba(217,164,65,.06);position:relative}
+.static-plate::before{content:attr(data-k);position:absolute;top:-.62rem;left:.8rem;background:#030616;padding:0 .5rem;font:500 .66rem "IBM Plex Mono",monospace;color:#d9a441;letter-spacing:.22em;text-transform:uppercase}
+.static-plate .sp-inner{padding:1.6rem 1.2rem .6rem;filter:drop-shadow(0 0 10px rgba(47,123,255,.35))}
+.static-plate svg{width:100%;height:auto;display:block}
+.static-plate figcaption{font:italic 400 .95rem/1.5 "EB Garamond",serif;color:var(--dim);text-align:center;padding:.7rem 1.2rem 1rem;border-top:1px solid rgba(217,164,65,.25)}
+.static-plate figcaption b{font:600 .72rem "IBM Plex Mono",monospace;font-style:normal;color:#d9a441;letter-spacing:.18em;margin-right:.6rem;text-transform:uppercase}
+@media (max-width:900px){.static-plate{margin:2.4rem -.6rem}}
+.tablewrap{margin:2rem -6rem;overflow-x:auto}
+@media (max-width:1100px){.tablewrap{margin:2rem -.6rem}}
+.tablewrap .tbtns{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.7rem;justify-content:center}
+.tablewrap .tbtns button{font:500 .64rem "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--white);border:1px solid var(--rule);padding:.38rem .6rem;cursor:pointer}
+.tablewrap .tbtns button.on{border-color:var(--electric);background:rgba(47,123,255,.28)}
+table.pred{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.42;background:rgba(3,8,32,.85);border:1px solid var(--rule)}
+table.pred th{font:500 .62rem "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--volt);text-align:left;border-bottom:1px solid var(--electric);padding:.6rem .6rem;vertical-align:bottom}
+table.pred td{vertical-align:top;border-bottom:1px solid var(--rule);padding:.65rem .6rem;color:#cfe3ff;transition:background .3s,color .3s,opacity .3s}
+table.pred td:first-child{font:600 .72rem "IBM Plex Mono",monospace;color:var(--red)}
+table.pred td:nth-child(2){color:#fff;font-style:italic}
+table.pred.dimmed td.c{opacity:.28}
+table.pred.dimmed td.c.hl{opacity:1;background:rgba(47,123,255,.14);color:#fff;text-shadow:0 0 10px rgba(47,123,255,.6)}
+.pos{color:var(--red);font:600 .72rem "IBM Plex Mono",monospace;letter-spacing:.12em}
+@media (max-width:560px){.protocol dl{grid-template-columns:1fr}.protocol dt{margin-top:.4rem}.cover-read{grid-template-columns:1fr}body{font-size:1.06rem}}
+@media (prefers-reduced-motion:reduce){.hero-wrap canvas{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="palimpsest" aria-hidden="true" id="palimpsest"></div>
+
+<nav class="plates" id="nav">
+  <a href="#front"><span class="shi">勢</span></a>
+  <a href="#prologue">0</a><a href="#s1">I</a><a href="#s2">II</a><a href="#s3">III</a><a href="#s4">IV</a><a href="#s5">V</a><a href="#s6">VI</a><a href="#s7">VII</a><a href="#s8">VIII</a>
+  <a href="#s9">IX</a><a href="#s10">X</a><a href="#s11">XI</a><a href="#s12">XII</a><a href="#s13">XIII</a><a href="#s14">XIV</a><a href="#s15">XV</a><a href="#s16">XVI</a><a href="#your-event">XVII</a>
+</nav>
+
+<header class="front" id="front">
+  <div class="masthead">Principia Humanitatis · <b>Interstitial</b> · a reply to Daniel Monroy</div>
+  <div class="hero-wrap" id="heroWrap" title="Re-weave the cloth">
+    <canvas id="hero" aria-label="A generated cloth being woven in glowing electric blue, with the weaver's irregularities marked in red"></canvas>
+    <div class="axis"></div>
+    <div class="hint">TAP TO RE-WEAVE THE CLOTH</div>
+  </div>
+  <h1 class="glow">A Game of <em>Events</em></h1>
+  <div class="redrule"></div>
+  <p class="sub">Iain Kerr's event, the Situationist situation, and the act of rebranding — with an answer to whether the agency we protect must be visible, or only retained in its conditions</p>
+  <div class="byline">Mark Downham · for Daniel Monroy · London · 23 November 2026</div>
+</header>
+
+<main>
+
+<section id="prologue">
+  <div class="plate-no">Prologue · The Question and the Test</div>
+  <h2 class="glow">Visible, or Retained?</h2>
+  <p class="lede">Daniel, you set a test before you asked your question, and the test deserves to go first. We reached a similar dynamic from different starting points. Mine came through counter-cultural philosophy and complexity. Yours came through the practical work of structure, diagnosis and operations on the brand side. You named both readings of that convergence. Either the pattern is more than one field's jargon, or we have each translated the other into the weave and made the match cheaper than it looks. Then you said where the real test lies: where our accounts predict differently.</p>
+  <blockquote class="scripture glow">In a Situation the constructor withdraws, while the weaver reappears in the cloth. Does the agency you're protecting need to be visible there, or only retained in its conditions?<cite class="masthead">Daniel Monroy · November 2026</cite></blockquote>
+  <p>I want to answer it properly, which means not answering it at once. Since your note, a third voice has joined the conversation and changed its terms. Iain Kerr, writing for Emergent Futures Lab and its Worldmakers community, has spent six weeks testing what follows if events are taken as ontologically primary. Things are events. Thoughts are events. So are ways of sensing, feeling, doing and knowing. The subject who might hold, show or withdraw agency is also an event, a creative achievement of a dense knot of other events. If Kerr is right, your question changes shape. It is no longer about where a pre-existing agency sits, on the surface or in the substrate. It is about what kind of event can make agency happen at all, and keep it answerable.</p>
+  <p>So this reply has three strands: Kerr's <b>event</b>, the Situationists' <b>situation</b>, and your <b>act of rebranding</b>. I weave them, set them against one another, and then come back to your question with something more exact than a clever reply. Every diagram is an instrument rather than an illustration. You can drop a diver, take a cut through a brand's history, flatten a wordmark, push the stakes, and watch what each account predicts. I end with a table of divergent predictions, because that is your test, and a convergence that never risks a prediction is only a rhyme.</p>
+  <div class="cover-read">
+    <div><b>The cloth (hero)</b>Woven live from a seed. The red knots are the weaver's errors, the places the hand shows. Tap it and it weaves again, never the same way twice.</div>
+    <div><b>The red axis</b>The cut: the point where a process is sliced and held still. An identity is one of these.</div>
+    <div><b>The water</b>Kerr's test case, built as a working simulator. Choose the height and drop the diver.</div>
+    <div><b>道 理 勢</b>The classical spine of the argument. Configuration, pattern and way are the three places agency can live.</div>
+  </div>
+</section>
+
+<section id="s1">
+  <div class="plate-no">Plate I · Card of Suspicion</div>
+  <h2 class="glow">Three Words for One Shape?</h2>
+  <p class="lede">Begin with suspicion, the kind you aim at the field of brands. DiMaggio and Powell's institutional isomorphism describes rational actors under shared pressures growing more alike, each making a locally sensible choice. You use it to explain why wordmarks converge. It applies just as well to concepts. Practitioners in neighbouring fields read the same small library: Whitehead, Deleuze, Stacey, Juarrero, Snowden, Massumi. They attend the same calls and share the same audience. Over time they converge on a vocabulary of emergence, relation, process and weave. That convergence may be <i>mimetic</i> rather than discovered.</p>
+  <p>A rhyme differs from a finding in three ways, and I hold myself to all three.</p>
+  <p><b>Independent derivation.</b> Did each account reach the shape from its own materials? Yours came from rename studies, logo-commitment experiments and AI-purchasing surveys. Mine came from the salon, the cabaret and the dérive. Kerr's came from swimming pools, struts of spruce and the long event of flight. Those are three different archives, which is promising.</p>
+  <p><b>Shared anomalies.</b> Do the accounts struggle with the same awkward facts? They do. Each has trouble with the case where an apparently small change in surface produces a change in kind for one participant and not another: Walsh, Winterich and Mittal's committed consumers, Kerr's diver at five hundred feet, the salon guest who leaves converted while another leaves bored.</p>
+  <p><b>Divergent predictions.</b> Does each account forbid something the others allow? This is where translation-convergence fails, and where Plate XIV goes.</p>
+  <p class="caps">Three words · one shape · or three shapes wearing one word</p>
+</section>
+
+<section id="s2">
+  <div class="plate-no">Plate II · Card of the Event</div>
+  <h2 class="glow">Kerr's Event</h2>
+  <p class="lede">Emergent Futures Lab begins from a refusal. For nearly a century, it argues, creativity has been treated as if it starts in the head: individual, idea-centred, human. EFL proposes instead that creativity emerges from the middle of doing, out of the relations among processes, agents, tools, materials and environments, and that it is always more than human. A line attributed to Kerr compresses this: novelty emerges not from our heads but from the middle of action.</p>
+  <p>The event is the unit of that middle. In an early volume of the <i>Emerging Futures</i> newsletter, the lab built the concept diagrammatically. A process is a repeating loop of activity. When several processes converge and assemble, a unique event forms. The event's assemblage has an emergent logic that exceeds its parts. Feedback loops stabilise a field of potential whose stable outcomes are attractors. And one can make <i>cuts</i> into the process: slices at a given moment that give a portrait of a network, compared across time to watch processes enter and leave.</p>
+  <p>Notice this early, because everything later depends on it: <b>an identity is a cut.</b> A logo, a name, a one-line description is a slice through the brand-event, taken at a moment and then held still. Your insight that a first identity "was not wrong later. It was late" is a theorem about cuts. The slice was true to the network it portrayed. The network moved on and the slice did not. The first instrument makes that visible.</p>
+
+  <figure class="instrument" data-k="Instrument II · The Cut" id="cutFig">
+    <div class="stage"><canvas id="cutCv" aria-label="Five converging processes over a brand's history, with the identity cut held still and a draggable present cut"></canvas></div>
+    <div class="ctrl">
+      <button data-a="rebrand">Rebrand · take a new cut here</button>
+      <button data-a="refresh">Refresh · re-ink expression only</button>
+      <button data-a="seed">New history</button>
+      <button data-a="reset" class="red">Return to day one</button>
+    </div>
+    <div class="read" id="cutOut"></div>
+    <figcaption>Drag the blue cut through time · the red cut is the identity, held still · shaded gaps are lateness</figcaption>
+  </figure>
+
+  <h3>Flight invented the Wright brothers</h3>
+  <p>The newer volumes push the concept to its most provocative edge. In <i>The Event's Perspective</i>, Frasca and Kerr ask what happens to innovation if we look at it from the side of the event. Their answer reverses the ordinary causal arrow. The Wright brothers did not invent flight. Flight, a long event of a few hundred years made of people, wood, wind and tools, coming together the way a storm does, invented <i>them</i>. The brothers became helpmates rather than originators. The authors guard against the obvious objection that this is personification. The invention is not a puppet master placing ideas in human heads. It is what they call, after Massumi, self-conditioning emergence.</p>
+  <p>Two features of this view decide what follows. First, <b>agency is relational and conditioned, not abolished.</b> Humans still matter, but the event transforms <i>how</i> they matter. Wood, wind and cloth count as collaborators, not passive stock. Second, <b>the event has no clean start or finish.</b> Flight is not over. Events do not begin when announced or end when launched. They cross thresholds and persist while their conditions hold.</p>
+  <h3>The water</h3>
+  <p>Then comes the test case Kerr has used for years. Sea water, the lab wrote in 2021, is a liquid when I float in it. I can dive into it and it affords me a gradual slowing, so I come back to the surface alive. Jump from four hundred feet and the ocean gives no such welcome. From that height the ocean is solid. Later volumes give this kind of experience a name, the <i>transjective</i>: relevance arising through the agent's interaction with the world. The same water is a buoyant liquid to the swimmer, a skimmable surface to the water strider, a crowd of marbles to the bacterium. The chemistry has not changed. The achieved quality has. And, crucially, the quality of the water and the quality of the diver's experience <i>co-emerge from the same event.</i> How we feel is not held in us alone, and how things are is not held in them alone.</p>
+  <h3>Ontogenesis, not epistemology</h3>
+  <p>From this Kerr draws the consequence that matters most for your question. If subject and world co-emerge in events, then changing how we sense, feel, do and know is not mainly a matter of updating beliefs about a fixed reality. It is a matter of experimentally co-creating novel events out of and with existing ones. In his phrasing, it is an ontogenetic question and not simply an epistemological one. EFL treats ontology phenomenologically, as the question of how anything comes to show up as a thing at all.</p>
+  <div class="protocol" data-k="PROTOCOL OF THE EVENT"><dl>
+    <dt>Unit</dt><dd>The event: converging processes, assembled, held by feedback, with a field of potential</dd>
+    <dt>Agency</dt><dd>Relational; humans are helpmates, transformatively conditioned</dd>
+    <dt>Subject</dt><dd>Co-emerges with the world it meets. There is no observer outside the water</dd>
+    <dt>Method</dt><dd>Cuts (slices of a process in time); blocking; exaptation; judgement from not-knowing</dd>
+    <dt>Note</dt><dd>Your question asks <i>where</i> agency is. Kerr's turn asks <i>how agency comes to show up</i>. The answer lives in that turn.</dd>
+  </dl></div>
+</section>
+
+<section id="s3">
+  <div class="plate-no">Plate III · Card of the Constructed Moment</div>
+  <h2 class="glow">The Constructed Situation</h2>
+  <p class="lede">When the Situationist International published its definitions in the first number of its journal in 1958, the founding term was the <i>constructed situation</i>. It was defined as a moment of life deliberately constructed through the collective organisation of a unitary ambience and <i>a game of events</i>, <i lang="fr">un jeu d'événements</i>.</p>
+  <p>The definition already contains the word <i>event</i>. The SI did not oppose the situation to the event. It defined the situation as an <i>organisation</i> of events: a game, played deliberately and collectively, staged in an ambience built for the purpose. If Kerr's event is the world's generative weather, the Situationist situation is an attempt to seed that weather, to arrange conditions so that a storm of intensified life forms where otherwise there would be only the drizzle of the spectacle.</p>
+  <p>Debord's 1957 <i>Report on the Construction of Situations</i> was frank about the roles involved. A situation is made to be lived by those who construct it. Early on, a directing hand may be needed to coordinate. The aim was for the passive "public" to shrink and for a new kind of participant, people who live the situation rather than watch it, to grow. The constructor exists, and the constructor's ambition is to dissolve into the constructors.</p>
+  <p>In <i>All Coherence Gone</i> I traced this shape back through the cabaret to the salon and called it the <b>self-dissolving frame</b>: a structure built deliberately to hide its own framing, which reaches its highest purpose when it disappears into what it frames. The salonnière arranged bodies and conversation as a field of force. Le Chat Noir detonated that field into <i>fumisme</i>. The Situationists armed it with the dérive and détournement, and set it against the total mediation of life by images that Debord called the spectacle.</p>
+  <h3>Event and situation, side by side</h3>
+  <p>The two concepts share a lot. Both are relational. Both reject the spectator who stands outside and receives a finished world. They differ on three points, and each difference matters for your question.</p>
+  <p><b>Constructedness.</b> Kerr's event is the ontological default: everything is events, constructed or not. The SI's situation is a <i>made</i> event, a deliberate intervention against a world whose default events have been degraded into spectacle.</p>
+  <p><b>The politics of the default.</b> Kerr's ontology is generous: flight, smartphones, sails and Sedna are all creative achievements. The SI's is suspicious: in late capitalism the default event is a pseudo-event, organised by the commodity for spectators. An ontology in which <i>everything</i> is creative event struggles to name the events that are degraded, captured or recuperated. EFL does have a resource here, its concept of <i>explaining away</i>, and Plate XI presses on it.</p>
+  <p><b>Ephemerality.</b> The SI built situations to pass, and their destiny was supersession or recuperation. Kerr's events persist while their conditions hold. The SI does not ask how a situation endures. Kerr asks little about how an event is captured.</p>
+  <p>A rebrand sits exactly where these differences meet. It is a constructed intervention in a long-running event, it must endure, and it lives entirely inside the economy the Situationists named.</p>
+  <div class="protocol" data-k="PROTOCOL OF THE SITUATION"><dl>
+    <dt>Unit</dt><dd>A moment of life, deliberately constructed: unitary ambience plus a game of events</dd>
+    <dt>Agency</dt><dd>Prior and collective; the constructor aims to dissolve into the "livers"</dd>
+    <dt>Enemy</dt><dd>The spectacle: social relations mediated by images</dd>
+    <dt>Fate</dt><dd>Supersession, or recuperation into a style</dd>
+    <dt>Note</dt><dd>The definition already contains the event. The situation is an event with an organiser.</dd>
+  </dl></div>
+</section>
+
+<section id="s4">
+  <div class="plate-no">Plate IV · Card of the Sponsored Moment</div>
+  <h2 class="glow">The Rebrand as an Act</h2>
+  <p class="lede">Your Part Two does not use the language of events, but it is closer to Kerr than it looks, and further from Debord than it would like.</p>
+  <p>You split "the brand" into three layers that age at different speeds. <b>Story</b> is what the business is, whom it serves and where it sits. <b>Language</b> is its name and the words for what it sells. <b>Expression</b> is mark, type and palette. In EFL's vocabulary these are three <i>converging processes</i> with different tempos, and the brand is the event their convergence forms, held together by recognition, repetition and the habits of readers.</p>
+  <p>You distinguish a <b>refresh</b>, which keeps the story and retunes the expression, from a <b>rebrand</b>, which changes the story the identity has to carry. You read the rename literature carefully. Horsky and Swyngedouw's renamed firms improved, but not because of the name: the rename signalled real change to come. Kashmiri and Mahajan found markets rewarded names that signalled a <i>future</i> change of scope over names that merely caught up. You add frequency and commitment: committed consumers punish redesigns that uncommitted ones welcome. You name a third reader, AI systems that read not the mark but the <i>record</i>. From this you derive an <b>order of operations</b>, story then language then expression, set against the Amputation Playbook, which starts at expression and never asks whether the story moved.</p>
+  <h3>An act, not an event</h3>
+  <p>Your account is an account of an <i>act</i>, and I mean that as a compliment before I mean it as a criticism. Its grammatical subject is the leadership team. It assumes a diagnostician who can stand at the edge of the brand-event, cut it, read the layers, and sequence an intervention. That is the constructor's posture, and the constructor's discipline is real: someone has to sign off the spend.</p>
+  <p>So the rebrand-as-act sits between Kerr and Debord. Like the situation, it is a deliberate construction. Unlike it, it is meant to last and is staged inside the spectacle rather than against it. Like Kerr's event, it lives in a long becoming. Unlike it, it has a sponsor, a budget line and a launch date. The next instrument lets you place any made moment in that field and read off what it inherits from each corner.</p>
+
+  <figure class="instrument" data-k="Instrument IV · The Field of Made Moments" id="triFig">
+    <div class="stage"><canvas id="triCv" aria-label="Ternary field with Event, Situation and Act at the corners and a draggable point"></canvas></div>
+    <div class="ctrl" id="triPresets"></div>
+    <div class="read" id="triOut"></div>
+    <figcaption>Drag the point anywhere in the field · or choose a case · the reading changes with the mixture</figcaption>
+  </figure>
+  <div class="protocol" data-k="PROTOCOL OF THE ACT"><dl>
+    <dt>Unit</dt><dd>A sponsored change of identity: story, language, expression</dd>
+    <dt>Agency</dt><dd>Prior and accountable: the leadership team that signs</dd>
+    <dt>Readers</dt><dd>The loyal, the deciding, and now the machine that shortlists</dd>
+    <dt>Method</dt><dd>Story → language → expression; audit bundled launches element by element</dd>
+    <dt>Note</dt><dd>A constructor who must not withdraw, because the spend has a signature. Hold that thought until Plate XIII.</dd>
+  </dl></div>
+</section>
+
+<section id="s5">
+  <div class="plate-no">Plate V · Card of the Water</div>
+  <h2 class="glow">The Transjective Brand</h2>
+  <p class="lede">This is the first place where Kerr's water and your evidence meet exactly enough to be more than rhyme.</p>
+  <p>Walsh, Winterich and Mittal redesigned logos for existing athletic-shoe brands and measured responses by commitment. The most committed consumers reacted most negatively. The weakly committed reacted positively. You read this as an exposure question in two parts: how often do they see it, and how attached are they?</p>
+  <p>Read it through the water. The redesign is the "same" relational event. To the uncommitted reader it arrives as liquid: it parts around them, slows them gently, and they surface to say the new look is fresh. To the committed reader the same redesign arrives at terminal velocity, because commitment <i>is</i> velocity: years of accumulated approach, a body that has been falling toward this mark for a decade. For that reader the water has turned solid. There is no gradual slowing, only impact.</p>
+  <p class="caps">Commitment is height · the loyal reader hits the mark at terminal velocity</p>
+  <p>Your third reader has a place in the same water. If the loyal human is the diver at five hundred feet, the AI system is the <b>water strider</b>. It does not plunge into the brand at all. It skates on the surface tension of the record: names, descriptions, and whether the accounts agree. A record full of contradictions is a surface with broken tension, and the strider falls through. The fourth reader, the <b>bacterium</b> for which water is a crowd of bouncing marbles, is the micro-encounter: one footer, one unrevised template, one supplier PDF, one search query. At that scale the brand is not an identity but a scatter of collisions. Rebrands fail here constantly and invisibly. The instrument below runs all four.</p>
+
+  <figure class="instrument" data-k="Instrument V · The Water" id="waterFig">
+    <div class="stage"><canvas id="waterCv" aria-label="Water simulator: a diver dropped from adjustable height, a water strider on the surface of the record, and a bacterium among marbles"></canvas></div>
+    <div class="ctrl">
+      <button data-m="human" class="on">Diver · the human reader</button>
+      <button data-m="strider">Strider · the machine reader</button>
+      <button data-m="micro">Bacterium · the micro-encounter</button>
+      <span class="sep"></span>
+      <label id="hLab">Height · commitment <input type="range" id="hRange" min="10" max="500" step="5" value="40"><output id="hVal">40 ft</output></label>
+      <label id="cLab" style="display:none">Record coherence <input type="range" id="cRange" min="0" max="100" step="1" value="72"><output id="cVal">72%</output></label>
+      <button data-a="drop" class="red" id="dropBtn">Drop</button>
+      <button data-a="p40">40 ft</button><button data-a="p150">150 ft</button><button data-a="p500">500 ft</button>
+    </div>
+    <div class="read" id="waterOut"></div>
+    <figcaption>Same water · four readers · the quality is achieved in the encounter, not stored in the molecule</figcaption>
+  </figure>
+
+  <p>This mapping changes a claim in your paper. You write that a loyal, frequent audience will punish a visual change more than a casual one, and that a system reading the record responds to a language change on a different clock. That reads as two audiences reacting differently to one change. The transjective reading says something stronger: <b>there is no one change.</b> There are as many rebrands as there are kinds of encounter, and each is real. "The rebrand" as a single object assessed by a leadership team is a cut taken from the sponsor's height, and the sponsor's height is only one more reader.</p>
+  <div class="protocol" data-k="EXAMINER'S PROTOCOL"><dl>
+    <dt>Location</dt><dd>W: the whole brand, read from four heights at once</dd>
+    <dt>Determinant</dt><dd>Velocity (commitment × frequency) decides whether the surface is liquid or solid</dd>
+    <dt>Content</dt><dd>Swimmer, diver, strider, bacterium: casual, loyal, machine, micro</dd>
+    <dt>Popular</dt><dd>"A fresh new look." (The casual reader always sees liquid first.)</dd>
+    <dt>Note</dt><dd>The subject reports that there was "no one rebrand". Unusual insight. Score as transjective.</dd>
+  </dl></div>
+</section>
+
+<section id="s6">
+  <div class="plate-no">Plate VI · Card of the Threshold</div>
+  <h2 class="glow">Degree and Kind</h2>
+  <p class="lede">Your refresh/rebrand distinction is your sharpest tool, and EFL supplies its physics. The physical world, the lab wrote early on, is in continuous variation, always crossing critical thresholds: the egg turns from liquid to solid, still water boils, gas ignites. Near those points, change in degree becomes change in kind.</p>
+  <p>A refresh is a change in degree. A rebrand is a change in kind. You draw the line through the business: has the story moved? The event view adds that the threshold is <i>relational</i>. Boiling point depends on pressure. Whether a change of surface crosses into a change of kind depends on the reader's commitment, frequency and height. A tidier palette is a change of degree for the casual reader and can be a change of kind for the loyal one, who reads every touch to the mark as a touch to the story because, for them, mark and story fused long ago.</p>
+  <p>So your layers age at different speeds, as you say, but they are <b>separable only for some readers.</b> For the committed reader they have been woven so tight that pulling one thread moves the cloth. Each dot below is a reader, placed at their own boiling point. Slide the change across and watch who crosses into kind.</p>
+
+  <figure class="instrument" data-k="Instrument VI · The Relational Boiling Line" id="thFig">
+    <div class="stage"><canvas id="thCv" aria-label="Phase plane of readers by commitment and personal threshold, with a draggable magnitude of change"></canvas></div>
+    <div class="ctrl" id="thCtrl">
+      <button data-p="soft" class="on">Soft drink</button><button data-p="bank">Banking app</button><button data-p="mort">Mortgage</button><button data-p="b2b">Consultancy</button>
+      <span class="sep"></span>
+      <button data-c=".12">Tidier palette</button><button data-c=".32">Flattened wordmark</button><button data-c=".48">Vertical lockup + colour</button><button data-c=".86" data-l="1">New name</button>
+      <button data-a="lang" class="red" id="langBtn">Change touches language</button>
+    </div>
+    <div class="read" id="thOut"></div>
+    <figcaption>Drag the vertical line · each dot is a reader at their own threshold · red has crossed into kind</figcaption>
+  </figure>
+
+  <p>Your honest audit of the 7UP case is the right instrument at the right scale. In August 2026 Keurig Dr Pepper bundled a real reformulation with a vertical lockup and bolder colour. You ask whether the lockup is doing story work or only riding along. The event view adds a time axis. Riding along is not a permanent condition. An expression element that arrived with no story can, over eighteen months of encounter, <i>acquire</i> story and become what the loyal reader means by the brand's new self. Elements do not have fixed jobs. The event recruits them.</p>
+</section>
+
+<section id="s7">
+  <div class="plate-no">Plate VII · Card of the Knife</div>
+  <h2 class="glow">Blocking, Exaptation, Amputation</h2>
+  <p class="lede">EFL has an account of creative method, not only creative ontology, and it sheds a cold light on the Amputation Playbook.</p>
+  <p>The method turns on <i>blocking</i>: setting aside an existing function so a thing can be used in new ways. Engage and block, experiment toward unintended capacities, then select and co-opt. Those unintended uses are <i>exaptations</i>, novel affordances. Two qualifications are crucial. Early experiments <i>disclose</i> an area's underlying logic: its habits, processes and environments. Only after that disclosure can the logic be blocked <i>judiciously</i>. Trying to block everything, the lab says, is hubris.</p>
+  <p>Put the Amputation Playbook beside this. It blocks, but blindly. It sets aside the mark's irregularities, the superscript, the drawn idiosyncrasy, the cue a competitor with budget could not copy, without first disclosing what logic those features carried. And it blocks for the wrong master: the infrastructure's habit (grid, icon template, design system) rather than the business's. It is total blocking, in the service of an existing logic rather than against one. It is the inverse of exaptation.</p>
+
+  <figure class="instrument" data-k="Instrument VII · The Mark on the Bench" id="markFig">
+    <div class="stage"><canvas id="markCv" aria-label="A generated wordmark with distinctive irregularities and template habits, operated on by disclose, block, amputate and exapt"></canvas></div>
+    <div class="ctrl">
+      <button data-a="disclose">1 · Disclose</button>
+      <button data-a="block">2 · Block judiciously</button>
+      <button data-a="exapt">3 · Exapt</button>
+      <button data-a="amputate" class="red">Amputate (the Playbook)</button>
+      <button data-a="reset">Restore</button>
+      <button data-a="seed">New mark</button>
+    </div>
+    <div class="read" id="markOut"></div>
+    <figcaption>Disclose before you block · the Playbook removes the unintended asset · exaptation finds its unintended use</figcaption>
+  </figure>
+
+  <p class="caps">Exaptation finds the unintended use · amputation removes the unintended asset</p>
+  <p>Your remedy, starting with an inventory of what a competitor could not copy, is the lab's disclosure step in brand form. "The most useful output of an identity review is often a list of distinctive assets that exist and are underused" is close to a definition of latent exaptation. Here the convergence is real. You reached it from Romaniuk's distinctive-asset research. He reached it from the long event of flight. The derivations are independent.</p>
+  <p>The event view also says something less comfortable about your order of operations. EFL's loop is iterative: disclose, block, experiment, disclose again. Your sequence is linear. If disclosure happens through experiment, the story cannot be fully settled before expression is touched, because some of what the story <i>is</i> only shows up when the expression is played with. On the event view, step three sometimes teaches step one.</p>
+</section>
+
+<section id="s8">
+  <div class="plate-no">Plate VIII · Card of the Spectacle</div>
+  <h2 class="glow">The Launch as Pseudo-Event</h2>
+  <p class="lede">Now Debord comes back, and he does not come back kindly.</p>
+  <p>Every rebrand culminates in a launch: the post, the reveal film, the line about evolution. You note that justified and unjustified rebrands look identical from outside because they arrive with the same apparatus. In Situationist terms the launch is a constructed moment. Its game of events is organised, its ambience designed, its timing set. It is a situation in every respect but one: it is made to be <b>watched</b>, not lived.</p>
+  <p>Daniel Boorstin, writing in 1961, named this kind of happening the <i>pseudo-event</i>: planned rather than spontaneous, staged mainly to be reported, ambiguously related to underlying reality, and tending to be self-fulfilling. The rebrand launch fits closely. It is planted in order to be reported. Its relation to the business is exactly the ambiguity you diagnose. And it hopes to fulfil itself: say "evolution" loudly enough and the market will believe the business evolved.</p>
+  <p>Debord goes deeper than Boorstin. For the SI, the spectacle is a social relation among people mediated by images, and within it even genuine change is experienced as image. A business that really has changed still has to announce its change as spectacle. Your 7UP problem, a real story change giving cover to an expression change, is a local case of a general law:</p>
+  <blockquote class="scripture glow">In the spectacle, the authentic is the best packaging for the inauthentic.</blockquote>
+  <p>This is where your account and the Situationists' predict differently. Yours implies that a well-sequenced rebrand can escape the pseudo-event, so that the launch becomes an honest report of a real change. Theirs implies the launch stays a pseudo-event however true its content, because the form produces the passive reader. Kerr gives a third reading, the most useful of the three. If flight is not over, the brand-event did not begin at the launch and will not end there. What the brand becomes is decided in the years of encounters after it. The launch is weather. The brand is climate.</p>
+  <p class="caps">The spectacle owns the launch · the event owns the decade after it</p>
+  <div class="protocol" data-k="EXAMINER'S PROTOCOL"><dl>
+    <dt>Location</dt><dd>D: the detail that stands for the whole (the reveal film)</dd>
+    <dt>Determinant</dt><dd>C: colour and affect arriving before form, which is what launches are built to produce</dd>
+    <dt>Content</dt><dd>"A bold evolution"</dd>
+    <dt>Popular</dt><dd>"Fresh." (Always fresh.)</dd>
+    <dt>Note</dt><dd>Score as pseudo-event unless the launch makes its own construction legible.</dd>
+  </dl></div>
+</section>
+
+<section id="s9">
+  <div class="plate-no">Plate IX · Card of the Lure</div>
+  <h2 class="glow">Lure and Judgement</h2>
+  <p class="lede">One more instrument from EFL, borrowed from Whitehead, reframes your four leadership questions. A recent volume takes up Whitehead's definition of a proposition as a lure for feeling. Ordinary logic asks whether a statement is true, and so turns readers into judges. But every statement also pulls, drawing us out of ourselves into new ways of feeling and acting. We often stop at judgement and miss the pull. Fact-checking, the lab notes, can confirm every claim false and still miss how the statements move people.</p>
+  <p>Your Part Two is a superb instrument of judgement. Has the story changed? Does each visual change carry the story or ride along? Is the record one story, in the buyer's words? These are truth-questions put to the rebrand's propositions. They are necessary, and on their own they miss the lure.</p>
+  <p>A new identity is a proposition offered to every reader at once, and its effect is mostly not a truth-effect. The vertical lockup claims nothing that could be checked. It pulls: it invites a posture, a speed, a way of reaching for the can. The flattened wordmark does not assert that the company is now generic. It lures the reader into treating it as generic, letting it slide past at the speed of every other flattened mark. The Amputation Playbook does its harm as a lure, not as a falsehood, which is why no dashboard measures it.</p>
+  <p>John Protevi, a recent Worldmakers guest, offers a test that works on lures. Does the encounter produce repeatable, mutually active joyous affect in care and cooperation? Does it increase the <i lang="fr">puissance</i>, the capacity to act, of the bodies involved, so that they can form new empowering encounters beyond the first? Applied to a rebrand, the question becomes whether the new identity increases the capacity to act of the people who meet it: the loyal customer, the new buyer, the employee who must wear it, the supplier who must print it, and, to be thorough, the machine that must describe it. Some honest rebrands fail this test, and some dishonest refreshes pass it for a while. A leadership team needs both tests.</p>
+</section>
+
+<section id="s10">
+  <div class="plate-no">Plate X · Card of the Three Hands</div>
+  <h2 class="glow">Three Postures of Agency</h2>
+  <p class="lede">Now I can come to your question with the instruments it needs. Your question names two figures: the <b>constructor</b> who withdraws and the <b>weaver</b> who reappears in the cloth. Kerr adds a third: the <b>helpmate</b>, whom the event invents. They are three postures of agency, and they differ on the one thing your question is about: where agency is located before, during and after the made moment.</p>
+  <p><b>The constructor's agency comes first.</b> The salonnière, the Situationist director and the brand strategist exist before the situation, design its conditions and then, by choice, method or modesty, step back. Their agency is retained in the conditions: the seating plan, the ambience, the design system. This is the self-dissolving frame, and its ideal is the Dàodéjīng's ruler, of whom the people know only that there is one, and who leaves them saying the work happened by itself.</p>
+  <p><b>The weaver's agency co-arises.</b> This is my principle, and I take it to be where Ralph Stacey was heading in <i>Complexity and Group Processes</i>: the weaver reappears in what is woven whilst weaving. In complex responsive processes, following Mead and Elias, the self is itself a pattern of the ongoing conversation. The weaver cannot withdraw, because there is nowhere outside the cloth to stand.</p>
+  <p><b>The helpmate's agency is conditioned.</b> Kerr's Wright brothers neither stood outside flight and arranged it nor merely co-arose with it. They were invented by it and swept in. They became careful participants in a becoming that came before them and exceeded them. The weaver belongs to the loom. The helpmate belongs to the weather.</p>
+
+  <figure class="instrument" data-k="Instrument X · Three Hands" id="postFig">
+    <div class="stage"><canvas id="postCv" aria-label="Animated comparison of constructor, weaver and helpmate postures with a legibility switch"></canvas></div>
+    <div class="ctrl">
+      <button data-m="constructor" class="on">Constructor</button>
+      <button data-m="weaver">Weaver</button>
+      <button data-m="helpmate">Helpmate</button>
+      <button data-a="legible" class="red" id="legBtn">Make legible</button>
+    </div>
+    <div class="read" id="postOut"></div>
+    <figcaption>Watch where each hand goes · then switch on legibility and see what can still be found</figcaption>
+  </figure>
+
+  <p>Your question is posed <i>between</i> the first two postures. It asks whether the constructor's withdrawn agency, retained in conditions, is enough, or whether it must appear as the weaver's does, in the cloth. At first Kerr's third posture seems to dissolve the question. If agency is always conditioned by the event, it is neither visible nor retained, and there is nothing outside the event for it to be retained in. I think that is half right, and the danger lies in the half that is wrong.</p>
+</section>
+
+<section id="s11">
+  <div class="plate-no">Plate XI · Card of the Alibi</div>
+  <h2 class="glow">The Danger in the Event</h2>
+  <p class="lede">Chris Corrigan's recent letter to his Art of Hosting community is the sharpest text I know on this danger, and the corrective my own <i>All Coherence Gone</i> needed. After nearly a quarter-century of hosting, he writes that "our methods may look like they fade the power of the host into the background." The architecture still carries that power. Someone called the meeting, framed the purpose and chose the harvest. He offers a triangle of three powers that meet in any container: <i>interactions</i> (distributed power), <i>structure</i> (contextual power: mandates, resources, constraints) and <i>design</i> (the host's privileged power over purpose, method and invitation). And he warns that a powerful experience is not system change.</p>
+  <p>Read Corrigan beside Kerr's flight and an uncomfortable symmetry appears. The self-dissolving frame says the host withdrew and the participants did it themselves. The event ontology can be made to say the host was invented by the event. Both may be true. Used carelessly, both perform the same operation: they <b>remove the address</b> to which a question about power could be delivered.</p>
+  <p>EFL has the word for this. Its own term is <i>explaining away</i>: apparently acknowledging something's importance while actually dismissing it. An event ontology that says "humans still matter, but transformatively conditioned" can, in the wrong hands, explain away human answerability. Kerr's hands are not the wrong hands. His insistence on care, attunement and Protevi's ethical test shows that. But a concept does not carry its author's ethics when it travels, and this one will travel into boardrooms. A strategist who has read <i>The Event's Perspective</i> and then flattened a sixty-year-old wordmark can say, with philosophical sophistication, that the design system invented them. The redescription would be accurate, and it would be a laundering.</p>
+  <blockquote class="scripture glow">The constructor's alibi was always the weather.</blockquote>
+  <p>So Kerr does not dissolve your question. He relocates it. If agency is an achievement of events, then <i>answerability</i> is too. It does not exist by default. It has to be made to show up, in EFL's own phenomenological sense of ontology: how does any thing come to show up as some thing at all? Answerability is one of those things, and it shows up only in events constructed so that it can.</p>
+  <div class="protocol" data-k="EXAMINER'S PROTOCOL"><dl>
+    <dt>Location</dt><dd>S: the white space where the host used to be</dd>
+    <dt>Determinant</dt><dd>m: inanimate movement, things moving with no one moving them</dd>
+    <dt>Content</dt><dd>"The design system invented me."</dd>
+    <dt>Popular</dt><dd>"It emerged."</dd>
+    <dt>Note</dt><dd>Accurate, and a laundering. Score as alibi and ask who set the tension.</dd>
+  </dl></div>
+</section>
+
+<section id="s12">
+  <div class="plate-no">Plate XII · Card of the Spine</div>
+  <h2 class="glow">道 理 勢</h2>
+  <div class="big-glyph">勢</div>
+  <p class="lede">The classical Chinese tradition anticipated this problem with unusual exactness, and its vocabulary gives your question a structure the Western terms lack.</p>
+  <p><b><span class="zh">勢</span> shì</b> is the propensity of a configuration: the potential stored in an arrangement, as in water poised above a gorge, a crossbow drawn, a slope. Sunzi's chapter on shì tells the skilled commander to seek victory in the configuration and not to demand it of individual men. Then comes the image that matters here:</p>
+  <div class="zh-block">故善戰人之勢，如轉圓石於千仞之山者，勢也</div>
+  <p class="zh-gloss">"So the shì of one skilled at sending men into battle is like rolling a round stone down a mountain a thousand ren high. That is shì." · Sūnzǐ, ch. 5 · my rendering</p>
+  <p>A thousand ren is the height from which water becomes stone. Sunzi's boulder and Kerr's diver obey the same physics. Shì is agency <i>retained in conditions</i> in its purest form. The general who masters it no longer needs to be seen commanding, because the slope commands. It is the strategic ancestor of the self-dissolving frame, the design system and the hosting container.</p>
+  <p><b><span class="zh">理</span> lǐ</b> is pattern: originally the veins in jade, the grain the carver follows, and later the inner principle by which things cohere. Lǐ is the weaver's reappearance: the pattern in the cloth that carries the pressure of the hand that wove it. A distinctive brand asset is lǐ, the irregularity left by a particular history of making, which no template can supply because no template went through that history.</p>
+  <p><b><span class="zh">道</span> dào</b> is the way, the generative course in which configurations form and patterns appear. It is the nearest classical analogue to Kerr's event field.</p>
+  <div class="zh-block">功成事遂，百姓皆謂：我自然</div>
+  <p class="zh-gloss">"When the work is done and the matter accomplished, the people all say: we are simply like this." · Dàodéjīng 17</p>
+  <figure class="static-plate" data-k="Plate XII · The Spine at Rest · Fig. 4">
+    <div class="sp-inner">
+<svg viewBox="0 0 900 380" role="img" aria-label="Dao, Li, Shi mapped onto event, weaver, constructor">
+  <g font-family="Georgia,serif" text-anchor="middle" fill="#ece5d3">
+    <circle cx="450" cy="190" r="165" fill="none" stroke="#7f9be0" stroke-opacity=".45"/>
+    <text x="450" y="60" font-size="44" fill="#7f9be0">道</text>
+    <text x="450" y="88" font-size="13" fill="#cfc6b0" font-style="italic">dào · the event field · Kerr</text>
+    <text x="320" y="225" font-size="44" fill="#d9a441">理</text>
+    <text x="320" y="252" font-size="13" fill="#cfc6b0" font-style="italic">lǐ · pattern in the cloth</text>
+    <text x="320" y="270" font-size="11" fill="#8f8a7c">weaver · distinctive asset · visible</text>
+    <text x="580" y="225" font-size="44" fill="#c8452f">勢</text>
+    <text x="580" y="252" font-size="13" fill="#cfc6b0" font-style="italic">shì · propensity of conditions</text>
+    <text x="580" y="270" font-size="11" fill="#8f8a7c">constructor · design system · retained</text>
+    <path d="M370 210 Q450 160 530 210" fill="none" stroke="#ece5d3" stroke-opacity=".5" stroke-dasharray="4 5"/>
+    <text x="450" y="172" font-size="12" fill="#ece5d3">legibility: shì must be able to show its lǐ</text>
+  </g>
+</svg>
+    </div>
+    <figcaption><b>Fig. 4</b>The classical spine. Your question asks whether shì is enough, or whether it must show itself as lǐ. The answer is the dotted line between them.</figcaption>
+  </figure>
+
+  <h3>Reading the spine at rest</h3>
+  <p class="lede">This plate is the argument before it moves. It is a cut through the instrument that follows, held still so it can be read slowly, the way an identity holds a brand-event still. Every placement is meant to carry weight, so here is how to read it.</p>
+  <p><b>The circle is <span class="zh">道</span>.</b> Dào sits at the crown, but it is also the whole ring: the event field inside which every configuration forms and every pattern appears. I have tagged it with Kerr's name because his event is the nearest modern analogue to the classical way, a becoming that comes before and exceeds every particular arrangement. Nothing in this plate stands outside the circle. The constructor and the weaver are both inside it, which is Kerr's point and Stacey's: there is no external standpoint from which to arrange the cloth.</p>
+  <p><b>The two lower glyphs are the two postures your question names.</b> On the right, in red, is <span class="zh">勢</span> shì: the propensity of conditions, the constructor's art, the design system and the hosting container. Its gloss ends in <i>retained</i>, because this is agency held in the arrangement. It is the round stone poised on the mountain, doing its work without being seen. On the left, in gold, is <span class="zh">理</span> lǐ: pattern in the cloth, the weaver's reappearance, the distinctive asset. Its gloss ends in <i>visible</i>, because this is agency showing itself as grain. The colours are deliberate. Red is the colour of power and of the fold-axis that runs through this page. Gold is the warmth of the hand.</p>
+  <p><b>The two sit at the same height, and that matters.</b> Neither outranks the other inside the field of dào. A tradition that ranked shì above lǐ produced the Legalist ruler who governs by arrangement and is never seen. One that ranked lǐ above shì would produce pure spectacle: pattern with no conditions behind it, the founder-as-brand, the mark as decoration. The plate keeps them level because the answer to your question is not a choice between them.</p>
+  <p><b>The answer is the dotted line.</b> The arc runs from shì to lǐ, and the words above it are the whole thesis compressed: <i>shì must be able to show its lǐ.</i> Three features of that line carry the argument.</p>
+  <p><i>It is dotted, not solid.</i> A solid line would mean standing visibility: the configuration always on show, the host forever on stage, and therefore spectacle. A missing line would be Corrigan's hidden power, conditions with no traceable author. The dotted line is the third term, legibility: a connection that exists, can be followed when it is needed, and does not insist on being looked at.</p>
+  <p><i>It arches upward, toward <span class="zh">道</span>.</i> The route from configuration to pattern does not go around the event field. It passes up through it. Legibility is not something the constructor owns and hands over. It is an event in its own right, co-created inside the field. That is the ontogenetic turn of Plate XIII: answerability has to be built, occasion by occasion, as part of the event.</p>
+  <p><i>It runs from shì to lǐ, not the reverse.</i> The question is never whether pattern can be traced back to conditions; a good eye can always do that. The question is whether the arrangement can be made to show itself as pattern when the water turns hard, at five hundred feet, where money moves. The arc's direction is the direction of accountability.</p>
+  <p>Fig. 4 is the stillness. The instrument below is the same three positions set in motion: shì flowing from its source, the participants it reaches, and lǐ growing, vein by vein, when you ask the arrangement to show itself. Read the plate first, then push the stakes.</p>
+  <div class="protocol" data-k="EXAMINER'S PROTOCOL"><dl>
+    <dt>Location</dt><dd>W: the whole ring of 道, with D at each of the three glyphs</dd>
+    <dt>Determinant</dt><dd>FC: form and colour together. Red for shì, gold for lǐ, blue for the field</dd>
+    <dt>Content</dt><dd>A dotted arc between two hands at the same height</dd>
+    <dt>Popular</dt><dd>"A choice between two." (The fold always offers two halves first.)</dd>
+    <dt>Note</dt><dd>The subject reads the dotted line as the answer. Score as legible; the arc passes through the field, not around it.</dd>
+  </dl></div>
+
+  <p>The seventeenth chapter is the self-dissolving frame stated as a political ideal. Read through Corrigan, it is also the most elegant statement of hidden power ever written, and the tradition knew it. The Legalists made shì the explicit instrument of the ruler's control. The same concept the Daoist praises as non-interference, the Legalist uses as unseen domination. <b>Shì without lǐ</b> is the ruler who governs by arrangement and can never be called to account, because he is never seen to act. In this vocabulary your question becomes: <i>is shì enough, or must there be lǐ?</i> Push the stakes and see.</p>
+
+  <figure class="instrument" data-k="Instrument XII · 道 理 勢" id="dlsFig">
+    <div class="stage"><canvas id="dlsCv" aria-label="Flow field of shì down a slope striking participants; legibility grows veins of lǐ"></canvas></div>
+    <div class="ctrl">
+      <label>Stakes · height <input type="range" id="sRange" min="40" max="500" step="10" value="40"><output id="sVal">40 ft</output></label>
+      <button data-a="legible" class="red" id="liBtn">Let shì show its lǐ</button>
+      <button data-a="reset">Reset tallies</button>
+    </div>
+    <div class="read" id="dlsOut"></div>
+    <figcaption>勢 flows from the source · at low stakes it parts around the participants · at high stakes it strikes them · 理 makes each strike answerable</figcaption>
+  </figure>
+</section>
+
+<section id="s13">
+  <div class="plate-no">Plate XIII · Card of the Answer</div>
+  <h2 class="glow">The Answer</h2>
+  <p class="lede">My answer has four parts.</p>
+  <h3>1 · The dichotomy assumes the wrong ontology</h3>
+  <p>"Visible or retained in its conditions" assumes an agency that already exists and then either shows itself or hides behind the scaffold. On Kerr's account, and on Stacey's, no such agency exists before the event. Agency is not a possession to be displayed or stored. It is achieved, or not, in each encounter, the way the water's liquidity is.</p>
+  <h3>2 · Asked at the right height, it has a velocity-dependent answer</h3>
+  <p>When the encounter is slow and low-stakes (the swimmer at forty feet, the casual reader, the hosted conversation that only explores), agency retained in the conditions is enough. It parts around the participants and buoys them. Shì suffices. When the encounter is fast and high-stakes (the diver at five hundred feet, the committed reader, the moment in your own data where money moves and delegation stops), the same conditions arrive as a solid surface. Agency that existed only in the configuration becomes the thing people hit. At that height it must show itself, or the participant is broken against an arrangement no one will own.</p>
+  <blockquote class="scripture glow">Shì at forty feet. Lǐ at five hundred.</blockquote>
+  <h3>3 · The third term: not visible, but legible</h3>
+  <p>So the answer to "visible or retained?" is neither. It is <b>legible</b>: retained in the conditions but <i>traceable on demand</i>, able to surface as visible pattern at the moment the event turns solid. Standing visibility is its own trap. Debord saw that agency which must always be seen becomes image, and therefore spectacle: the founder-as-brand, the host forever on stage, the CEO in every launch film. Retention without traceability is the other trap, the one Corrigan names. Legibility is the narrow path between performance and concealment.</p>
+  <p>The word stings. James C. Scott made <i>legibility</i> the name of the state's project of making populations readable from above, so that they could be taxed, conscripted and planned. I use it in reverse, deliberately. Scott's legibility is the legibility of the governed to power. Mine is the legibility of power to the governed: of the host to the hosted, of the design system to the people its flattening affects, of the constructor to the participants who could not see the construction. Scott's legibility looks down. This one looks up.</p>
+  <h3>4 · Legibility must itself be built, ontogenetically</h3>
+  <p>The final turn is Kerr's. In an event ontology, legibility cannot be a property the constructor has and chooses to disclose. It has to be an event in its own right, co-created with the participants, so that answerability can show up when it is needed. In practice that means building into any made moment, whether a hosted gathering, a constructed situation or a rebrand, its own <i>occasions of disclosure</i>: moments where the frame shows itself on purpose, so that the shì can be read as lǐ and questioned. Détournement is one such practice. Corrigan's triangle is another. Your element-by-element audit of a bundled launch is a third.</p>
+  <p>So, plainly: <b>the agency I am protecting does not need to be visible in the Situation. It needs to be retained in its conditions in a way that can be made to appear: shì that can show its lǐ, a constructor who can be found when the water turns hard.</b> In an event ontology even that capacity is not given. It has to be co-created as part of the event. A Situation that cannot produce, on demand, an account of who arranged it is not a liberated situation. It is a spectacle that has learned to hide its own staging.</p>
+  <div class="protocol" data-k="EXAMINER'S PROTOCOL"><dl>
+    <dt>Location</dt><dd>W + S: the whole cloth, and the gap where the constructor stood</dd>
+    <dt>Determinant</dt><dd>M: form plus movement. A person found moving in the conditions</dd>
+    <dt>Content</dt><dd>A hand that can be found when the water turns hard</dd>
+    <dt>Popular</dt><dd>"Visible" or "hidden." (The fold always offers two halves first.)</dd>
+    <dt>Note</dt><dd>The subject refused the dichotomy and named a third term. Score as legible.</dd>
+  </dl></div>
+</section>
+
+<section id="s14">
+  <div class="plate-no">Plate XIV · Card of the Test</div>
+  <h2 class="glow">Where the Accounts Diverge</h2>
+  <p class="lede">Now your test. Below are seven questions on which four accounts come apart: yours, Kerr's, the Situationists' and mine. I have tried to be fair. Where your account predicts better, I say so. Where we agree only trivially, I call the agreement cheap. Pick an account to read its column alone.</p>
+  <div class="tablewrap">
+    <div class="tbtns" id="tbtns"><button data-col="all" class="on">All accounts</button><button data-col="3">Monroy · act</button><button data-col="4">Kerr · event</button><button data-col="5">Situationist</button><button data-col="6">Weave · Downham</button><button data-col="7">The decider</button></div>
+    <table class="pred" id="pred">
+      <thead><tr><th>#</th><th>Question</th><th>Monroy (act)</th><th>Kerr (event)</th><th>Situationist</th><th>Weave (Downham)</th><th>What would decide it</th></tr></thead>
+      <tbody>
+        <tr><td>P1</td><td>Is a pure refresh possible?</td><td class="c">Yes. The layers are separable; a refresh retunes expression and leaves story alone.</td><td class="c">Only relative to a reader; thresholds are relational.</td><td class="c">No. Any visible change is consumed as spectacle and recodes the commodity.</td><td class="c">Yes for casual and machine readers; no for committed, high-frequency readers, for whom the layers are one cloth.</td><td class="c">After an expression-only change, segment by commitment and ask what the brand <i>is</i> and <i>does</i>, not how it looks. If loyal segments report changed story attributes, the layers were not separable for them.</td></tr>
+        <tr><td>P2</td><td>Does the order of operations hold?</td><td class="c">Story → language → expression gives better outcomes than the reverse.</td><td class="c">No fixed order. Disclosure and blocking loop; expression experiments can disclose story.</td><td class="c">Irrelevant: the launch form neutralises it.</td><td class="c">The order leaks: expression writes back into story over time.</td><td class="c">Track bundled launches (e.g. 7UP). Twelve to eighteen months on, does consumer language attach story meaning to the element that was "riding along"?</td></tr>
+        <tr><td>P3</td><td>Is diagnosis neutral?</td><td class="c">Broadly. The review reveals whether the story moved.</td><td class="c">No. Cutting into a process is taking part in it.</td><td class="c">No. The expert is a specialist of the spectacle.</td><td class="c">No. The diagnosis is an event that changes the story it audits.</td><td class="c">Compare firms in identity review with matched firms that are not. Do internal accounts of "who we are" shift during review, before any launch?</td></tr>
+        <tr><td>P4</td><td>The machine reader</td><td class="c">Record consistency, buyer vocabulary and currency govern shortlisting.</td><td class="c">The strider reads surface tension; agrees.</td><td class="c">Little to say: the spectacle, automated.</td><td class="c">Agrees with Monroy. For the strider the layers <i>are</i> separable.</td><td class="c">Here your account predicts better than mine. Our agreement is cheap and does not discriminate between us.</td></tr>
+        <tr><td>P5</td><td>What drives flattening?</td><td class="c">Infrastructure: grids, icon templates, design systems.</td><td class="c">The assemblage's attractors pull marks into shared basins.</td><td class="c">Recuperation: the spectacle standardises.</td><td class="c">The constructor's withdrawal into the system; convergence is fastest where design authority is least named.</td><td class="c">Compare marks governed by a named, accountable design lead with marks governed only by system guidelines. Does distinctiveness decay faster in the second group?</td></tr>
+        <tr><td>P6</td><td>Can a launch escape the pseudo-event?</td><td class="c">Yes, if the story change is real and comes first.</td><td class="c">The launch matters less than the decade of encounters after it.</td><td class="c">No. The form makes the reader passive whatever the content.</td><td class="c">Partly, if the launch builds in occasions of disclosure that make its construction legible.</td><td class="c">Compare launches that explain each element's reasoning with launches that only reveal. Do the first show lower long-run rejection among committed readers?</td></tr>
+        <tr><td>P7</td><td>Is the constructor's withdrawal benign?</td><td class="c">Not addressed directly.</td><td class="c">Reframed: humans are helpmates, transformatively conditioned.</td><td class="c">Yes, as an ideal: spectators become livers.</td><td class="c">Only if legible. Withdrawal without traceability is hidden power.</td><td class="c">Corrigan's method: narrative capture before and after hosted interventions, comparing legible-host designs with self-dissolving ones on contact with context.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><b>P1 is where your own evidence favours the weave.</b> Walsh, Winterich and Mittal's result is hard to square with fully separable layers. If committed readers punish an expression change as if it were a story change, then for them it <i>is</i> one. By the sponsor's taxonomy it is a refresh. By the reader's, it is a rebrand. Your account can absorb this by making the taxonomy reader-relative, but at that point it has become an event account, and the order of operations loses its claim to be a single sequence.</p>
+  <p><b>P4 is where your account beats mine.</b> For the machine reader, separability holds well. The machine does not feel the hand. It reads names, descriptions and their agreement, and your three questions for that gate are exactly right. If AI shortlisting becomes a larger share of how buyers meet brands, the world will become more separable, more layered, more like your model. That is not a comfortable prediction for those of us who love the weave. A world read increasingly by striders rewards the shì of a clean record and gives no reward for the lǐ of an irregular mark. The weave's best defence is your own conclusion, that machines shortlist and people decide, and that the human who checks punishes the brand the machine described wrongly. The defence holds only while the human still checks.</p>
+  <p class="caps">If the striders inherit the water · the weave becomes a luxury of the loyal</p>
+</section>
+
+<section id="s15">
+  <div class="plate-no">Plate XV · Card of Practice</div>
+  <h2 class="glow">A Practice, If One Is Wanted</h2>
+  <p class="lede">For a leadership team approaching a change of identity with all three strands in mind, here is a practice. It doesn't replace your four questions. It surrounds them.</p>
+  <p><b>Cut at several times.</b> Following EFL's method, take slices of the brand-event at its founding, at its last change and now (Instrument II). The story has moved if the processes converging on the brand have changed, not if leadership feels it has.</p>
+  <p><b>Disclose before you block.</b> Before setting aside any feature of the existing identity, run experiments that reveal what logic it carries. Treat every irregularity as a possible exaptation until shown otherwise (Instrument VII).</p>
+  <p><b>Map the readers by height.</b> For each product line, place readers on Kerr's water: swimmers, divers, striders, bacteria. Ask what the change will be <i>for each</i>, not what the change is (Instruments V and VI).</p>
+  <p><b>Weigh lures as well as truths.</b> After asking whether each element carries the story, ask what it pulls the reader toward. Apply Protevi's test: does the new identity increase the capacity to act of the people who must meet it?</p>
+  <p><b>Make the construction legible.</b> Build occasions of disclosure into the launch and after it. Name the people who decided. Let the shì show its lǐ (Instrument XII).</p>
+  <p><b>Watch the decade, not the day.</b> The launch is weather. Track what the ride-along elements become over eighteen months, and be ready for step three to have taught step one something the sequence did not anticipate.</p>
+</section>
+
+<section id="s16">
+  <div class="plate-no">Plate XVI · Card of Theses</div>
+  <h2 class="glow">Sixteen Theses</h2>
+  <ol class="theses">
+    <li><strong>An identity is a cut.</strong>A slice through a brand-event, held still. It was not wrong later; it was late. Rebranding takes a new cut. Refreshing re-inks the old one.</li>
+    <li><strong>The situation is an event with an organiser.</strong>The SI defined the constructed situation as a game of events. Kerr's event needs no organiser. The rebrand is a game of events played inside the spectacle and meant to last.</li>
+    <li><strong>There is no single rebrand.</strong>There are as many rebrands as there are heights of encounter, and each is real: liquid to the casual reader, solid to the committed one, a surface to the machine, collisions to the footer.</li>
+    <li><strong>Commitment is height.</strong>The loyal reader meets the redesigned mark at terminal velocity.</li>
+    <li><strong>The threshold is relational.</strong>The line between refresh and rebrand, degree and kind, moves with the reader's commitment, as boiling point moves with pressure.</li>
+    <li><strong>Amputation is blocking without disclosure.</strong>Exaptation finds the unintended use. The Playbook removes the unintended asset, which EFL rightly calls hubris.</li>
+    <li><strong>The authentic packages the inauthentic.</strong>In the spectacle, a real story change gives cover to a riding expression change, and the bundled launch is built for that.</li>
+    <li><strong>Every identity is a lure.</strong>Judging its truth is necessary and not sufficient. The flattened mark does its harm as a lure.</li>
+    <li><strong>Three postures, not two.</strong>The constructor is prior and withdraws. The weaver co-arises and is re-patterned. The helpmate is invented by the event. The third relocates your question without dissolving it.</li>
+    <li><strong>The event can be an alibi.</strong>"The design system invented me" may be true and may be a laundering. Answerability is not given in an event world. It has to be co-created.</li>
+    <li><strong>Shì without lǐ is hidden power.</strong>Agency retained in configuration with no pattern to show for it: the ruler who governs by arrangement and is never seen to act.</li>
+    <li><strong>Not visible, but legible.</strong>Retained in its conditions and able to surface as pattern when the water turns hard. This is legibility looking up, not Scott's legibility looking down.</li>
+    <li><strong>Shì at forty feet, lǐ at five hundred.</strong>Where money moves and delegation stops, there must be a hand that can be found.</li>
+    <li><strong>The launch is weather; the brand is climate.</strong>The spectacle owns the day of the reveal. The event owns the decade after it.</li>
+    <li><strong>Our convergence is partly real.</strong>Distinctive assets as latent exaptations, reached independently. It is partly cheap: the machine reader, where we agree for reasons that do not discriminate between us.</li>
+    <li><strong>And genuinely divergent.</strong>On separability, sequence and the neutrality of diagnosis. That is where the evidence should go.</li>
+  </ol>
+</section>
+
+<section id="your-event">
+  <div class="plate-no">Plate XVII · The Card That Isn't in the Set</div>
+  <h2 class="glow">Your Event</h2>
+  <p>Describe a change of identity you are weighing, have made or have watched. Say what moved, who decided and who will meet it. The examiner will score it with this essay's determinants: Story, Language, Expression, readers, spectacle, legibility. Then, if you dare, switch on <b>Spectacle mode</b> and watch your change become an image of change. <b>Détourne</b> turns the apparatus back on itself.</p>
+  <div class="lab">
+    <textarea id="evText" placeholder="e.g. We grew from a regional studio into a multi-market consultancy, but we are only planning a new logo and palette. Our oldest clients have known the mark for twenty years…"></textarea>
+    <div class="btns">
+      <button id="evScore">Score my event</button>
+      <button id="evSpec" class="red">Spectacle mode</button>
+      <button id="evDet">Détourne</button>
+      <button id="evClear">New card</button>
+    </div>
+    <div class="out" id="evOut"></div>
+  </div>
+  <p class="note">Nothing you type leaves this page. The scoring is a parable, not a consultancy, but its categories are this essay's: S (story), L (language), E (expression), H (height of the readers), Sp (spectacle), Lg (legibility).</p>
+</section>
+
+<div class="sign glow">Flight is not over. Neither is the brand. Let the shì show its lǐ.</div>
+
+</main>
+
+<footer>
+  <h4>Apparatus</h4>
+  <p>Written in reply to Daniel Monroy, <i>Part Two: When a Rebrand Is the Right Call, and Who Is Reading It Now</i> (6 November 2026), and his question on constructors and weavers; and in conversation with Iain Kerr's post on taking events as ontologically primary in the Worldmakers community of Emergent Futures Lab (November 2026).</p>
+  <h4>Emergent Futures Lab</h4>
+  <ul>
+    <li><i>Emerging Futures</i> Vol. 9, <a href="https://emergentfutureslab.com/newsletter/vol-9-creativity-unmasked">Creativity Unmasked</a>.</li>
+    <li>Vol. 49, <a href="https://emergentfutureslab.com/newsletter/vol-49-on-processes-part-two-cutting-into-processes">On Processes, Part Two: Cutting into Processes</a>.</li>
+    <li>Vol. 136, <a href="https://emergentfutureslab.com/newsletter/vol-136-speculation-qualitative-novelty-and-judgement">Speculation, Qualitative Novelty, and Judgement</a>.</li>
+    <li>Vol. 222, <a href="https://emergentfutureslab.com/newsletter/vol-222-trans-wor-l-dly-thickets">Trans-Wor(l)dly Thickets</a>.</li>
+    <li>Frasca, Harrison &amp; Kerr, Vol. 246, <a href="https://emergentfutureslab.com/newsletter/vol-246-concepting-worlding">Concepting Worlding</a>.</li>
+    <li>Vol. 258, <a href="https://emergentfutureslab.com/newsletter/vol-258-creativity-s-leaps-in-readings">Creativity's Leaps-in-Readings</a>.</li>
+    <li>Frasca &amp; Kerr, Vol. 264, <a href="https://emergentfutureslab.com/newsletter/vol-264-the-events-perspective">The Event's Perspective</a>.</li>
+    <li>Jason Frasca &amp; Iain Kerr, <i>Innovating Emergent Futures</i> (2019).</li>
+  </ul>
+  <h4>Situation, spectacle, hosting</h4>
+  <ul>
+    <li>Guy Debord, <i>Rapport sur la construction des situations</i> (1957); <i>La Société du spectacle</i> (1967).</li>
+    <li>Internationale Situationniste, "Définitions", <i>Internationale Situationniste</i> 1 (1958).</li>
+    <li>Daniel J. Boorstin, <i>The Image: A Guide to Pseudo-Events in America</i> (1961).</li>
+    <li>Chris Corrigan, "<a href="https://www.chriscorrigan.com/parkinglot/dear-mates-a-letter-to-my-art-of-hosting-community/">Dear mates: a letter to my Art of Hosting community</a>" (2026).</li>
+    <li>Mark Downham, <a href="https://markdownham88-crypto.github.io/all-coherence-gone/"><i>All Coherence Gone</i></a>, Principia Humanitatis.</li>
+  </ul>
+  <h4>Process, complexity, legibility</h4>
+  <ul>
+    <li>A. N. Whitehead, <i>Process and Reality</i> (1929).</li>
+    <li>Ralph Stacey, <i>Complexity and Group Processes</i> (2003); G. H. Mead, <i>Mind, Self and Society</i> (1934).</li>
+    <li>Alicia Juarrero, <i>Context Changes Everything</i> (2023).</li>
+    <li>James C. Scott, <i>Seeing Like a State</i> (1998).</li>
+    <li>François Jullien, <i>The Propensity of Things</i> (1995).</li>
+    <li><i>Dàodéjīng</i>, ch. 17; <i>Sūnzǐ Bīngfǎ</i>, ch. 5 (勢). Renderings are the author's.</li>
+  </ul>
+  <h4>Brand evidence (as cited in Monroy, Part Two)</h4>
+  <ul>
+    <li>DiMaggio &amp; Powell, "The iron cage revisited", <i>American Sociological Review</i> 48(2), 1983.</li>
+    <li>Horsky &amp; Swyngedouw, "Does it pay to change your company's name?", <i>Marketing Science</i> 6(4), 1987.</li>
+    <li>Kashmiri &amp; Mahajan, "The name's the game", <i>Journal of Business Research</i> 68(2), 2015.</li>
+    <li>Jenni Romaniuk, <i>Building Distinctive Brand Assets</i> (2018).</li>
+    <li>Walsh, Winterich &amp; Mittal, "Do logo redesigns help or hurt your brand?", <i>Journal of Product &amp; Brand Management</i> 19(2), 2010.</li>
+    <li>Keurig Dr Pepper, 7UP brand evolution press release, 10 August 2026.</li>
+  </ul>
+  <p>Every diagram on this page is an instrument computed in your browser. The cloth, the histories and the marks are generated from seeds, so tap and reseed freely. Nothing leaves the page.</p>
+  <p>© 2026 Mark Downham · Principia Humanitatis</p>
+</footer>
+
+<script>
+(function(){
+"use strict";
+/* ---------- palimpsest: classical Chinese and the SI definition beneath everything ---------- */
+const pal="太上，不知有之；其次，親而譽之；其次，畏之；其次，侮之。信不足焉，有不信焉。悠兮其貴言。功成事遂，百姓皆謂：我自然。 故善戰者，求之於勢，不責於人，故能擇人而任勢。任勢者，其戰人也，如轉木石。木石之性，安則靜，危則動，方則止，圓則行。故善戰人之勢，如轉圓石於千仞之山者，勢也。 Situation construite : moment de la vie, concrètement et délibérément construit par l'organisation collective d'une ambiance unitaire et d'un jeu d'événements. ";
+document.getElementById('palimpsest').textContent=pal.repeat(12);
+
+/* ---------- toolkit ---------- */
+const C={el:'#2f7bff',volt:'#4fa3ff',glow:'#9fd6ff',white:'#eaf5ff',dim:'#8aa3cf',red:'#e2342b',void:'#02040f'};
+const RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)), lerp=(a,b,t)=>a+(b-a)*t, ease=t=>t<0?0:t>1?1:t*t*(3-2*t);
+const FAM={mono:'"IBM Plex Mono",ui-monospace,monospace',serif:'"Cormorant Garamond",Georgia,serif',eb:'"EB Garamond",Georgia,serif',zh:'"Noto Serif TC","Songti SC",serif'};
+function T(ctx,s,x,y,o){o=o||{};ctx.save();ctx.font=(o.it?'italic ':'')+(o.w||500)+' '+(o.size||11)+'px '+FAM[o.fam||'mono'];ctx.fillStyle=o.col||C.dim;ctx.textAlign=o.align||'left';ctx.textBaseline=o.base||'alphabetic';
+  if(o.ls&&ctx.letterSpacing!==undefined)ctx.letterSpacing=o.ls+'px';if(o.glow){ctx.shadowColor=o.glow;ctx.shadowBlur=o.blur||14;}if(o.a!==undefined)ctx.globalAlpha=o.a;ctx.fillText(s,x,y);ctx.restore();}
+function glow(ctx,c,b){ctx.shadowColor=c;ctx.shadowBlur=b;}
+function noGlow(ctx){ctx.shadowBlur=0;}
+function ptr(e,cv){const r=cv.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+function bg(ctx,w,h){const g=ctx.createRadialGradient(w/2,h*0.35,0,w/2,h*0.35,Math.max(w,h)*0.75);g.addColorStop(0,'rgba(13,29,110,.55)');g.addColorStop(.6,'rgba(5,10,36,.6)');g.addColorStop(1,'rgba(2,4,15,.9)');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);}
+function hex2(c,a){const n=parseInt(c.slice(1),16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')';}
+
+const figs=[];
+function fit(f){const cv=f.cv;if(!cv)return;const dpr=Math.min(2,window.devicePixelRatio||1);const w=Math.max(260,cv.parentNode.clientWidth);const h=Math.round(f.square?w:w*f.aspect);
+  cv.style.height=h+'px';cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);f.ctx=cv.getContext('2d');f.ctx.setTransform(dpr,0,0,dpr,0,0);f.w=w;f.h=h;f.dpr=dpr;if(f.resize)f.resize();}
+function reg(f){figs.push(f);fit(f);if('IntersectionObserver' in window){new IntersectionObserver(es=>es.forEach(e=>{f.vis=e.isIntersecting;if(f.vis&&f.onShow)f.onShow();}),{rootMargin:'120px'}).observe(f.cv);}else f.vis=true;return f;}
+let last=performance.now();
+function loop(now){const dt=Math.min(0.05,(now-last)/1000)||0.016;last=now;for(const f of figs){if(f.vis&&f.ctx){f.t=(f.t||0)+dt;try{f.frame(dt);}catch(err){console.error(err);}}}requestAnimationFrame(loop);}
+let rz;window.addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>figs.forEach(fit),150);});
+
+/* =====================================================================
+   HERO · the cloth, woven live
+   ===================================================================== */
+reg({cv:$('#hero'),square:true,seed:20261123,p:0,hold:0,fade:1,
+  gen(){const r=mulberry(this.seed);this.N=22;this.M=22;this.rows=[];const tw=2+Math.floor(r()*2);
+    for(let j=0;j<this.M;j++){const row=[];for(let i=0;i<this.N;i++){let over=((i+j)%(tw*2))<tw,err=false;if(r()<0.055){over=!over;err=true;}row.push({over,err,slub:r()<0.03});}this.rows.push(row);}},
+  resize(){if(!this.rows)this.gen();},
+  frame(dt){const{ctx,w,h}=this;ctx.clearRect(0,0,w,h);const cx=w/2,cy=h/2,R=w*0.47;
+    if(this.hold>0){this.hold-=dt;if(this.hold<1)this.fade=Math.max(0,this.hold);if(this.hold<=0){this.seed=(Math.random()*1e9)|0;this.gen();this.p=0;this.fade=1;}}
+    else{this.p+=dt*(RM?40:3.2);if(this.p>=this.M){this.p=this.M;this.hold=4.5;}}
+    let g=ctx.createRadialGradient(cx,cy,0,cx,cy,R);g.addColorStop(0,'rgba(47,123,255,.22)');g.addColorStop(.7,'rgba(20,50,180,.08)');g.addColorStop(1,'rgba(47,123,255,0)');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    ctx.save();ctx.beginPath();ctx.arc(cx,cy,R,0,7);ctx.clip();ctx.globalAlpha=this.fade;
+    const N=this.N,M=this.M,x0=cx-R*.8,x1=cx+R*.8,y0=cy+R*.8,y1=cy-R*.8,X=i=>lerp(x0,x1,i/(N-1)),Y=j=>lerp(y0,y1,j/(M-1)),gap=(y0-y1)/(M-1),amp=gap*0.24;
+    ctx.lineWidth=Math.max(1.4,gap*0.18);ctx.strokeStyle='rgba(79,163,255,.42)';glow(ctx,C.el,6);
+    for(let i=0;i<N;i++){ctx.beginPath();ctx.moveTo(X(i),y1-gap*1.4);ctx.lineTo(X(i),y0+gap*1.4);ctx.stroke();}
+    const full=Math.floor(this.p),frac=this.p-full;
+    for(let j=0;j<Math.min(M,full+1);j++){const row=this.rows[j];const lim=j<full?N-1:frac*(N-1);if(lim<=0)continue;
+      const off=i=>row[Math.min(N-1,i)].over?amp:-amp;
+      ctx.beginPath();for(let s=0;s<=lim;s+=0.08){const i=Math.floor(s),f=s-i,o=lerp(off(i),off(i+1),(1-Math.cos(Math.PI*f))/2);const x=lerp(X(0),X(N-1),s/(N-1)),y=Y(j)+o;s===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+      ctx.lineWidth=gap*0.34;ctx.strokeStyle='rgba(159,214,255,.92)';glow(ctx,C.el,12);ctx.stroke();noGlow(ctx);
+      for(let i=0;i<=Math.floor(lim);i++){const c=row[i];if(c.over){ctx.fillStyle=C.void;ctx.fillRect(X(i)-gap*0.14,Y(j)-gap*0.42,gap*0.28,gap*0.84);ctx.strokeStyle='rgba(79,163,255,.95)';ctx.lineWidth=gap*0.18;glow(ctx,C.el,8);ctx.beginPath();ctx.moveTo(X(i),Y(j)-gap*0.46);ctx.lineTo(X(i),Y(j)+gap*0.46);ctx.stroke();noGlow(ctx);}
+        if(c.err){ctx.fillStyle=C.red;glow(ctx,C.red,16);ctx.beginPath();ctx.arc(X(i),Y(j),gap*0.2,0,7);ctx.fill();noGlow(ctx);}
+        if(c.slub){ctx.fillStyle='#fff';glow(ctx,'#9fd6ff',18);ctx.beginPath();ctx.ellipse(X(i)+gap*0.5,Y(j),gap*0.34,gap*0.2,0,0,7);ctx.fill();noGlow(ctx);}}
+      if(j===full){ctx.fillStyle='#fff';glow(ctx,'#fff',24);ctx.beginPath();ctx.arc(lerp(X(0),X(N-1),lim/(N-1)),Y(j),gap*0.32,0,7);ctx.fill();noGlow(ctx);}}
+    ctx.restore();
+    g=ctx.createRadialGradient(cx,cy,R*0.62,cx,cy,R);g.addColorStop(0,'rgba(2,4,15,0)');g.addColorStop(1,'rgba(2,4,15,1)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,R+1,0,7);ctx.fill();
+    ctx.strokeStyle='rgba(79,163,255,.3)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,R,0,7);ctx.stroke();}
+});
+$('#heroWrap').addEventListener('click',()=>{const f=figs[0];f.seed=(Math.random()*1e9)|0;f.gen();f.p=0;f.hold=0;f.fade=1;});
+
+/* =====================================================================
+   II · THE CUT
+   ===================================================================== */
+const STREAMS=['Services · what it is','Audience · whom it serves','Positioning · where it sits','Market language','Expression · mark'];
+const SCOL=['#9fd6ff','#4fa3ff','#7fb6ff','#c9b8ff','#eaf5ff'];
+const cut=reg({cv:$('#cutCv'),aspect:.74,seed:1907,tc0:.08,tc:.88,drag:false,ann:'',
+  gen(){const r=mulberry(this.seed);this.S=STREAMS.map((n,k)=>({n,base:.1+k*.2,trend:(r()<.5?-1:1)*(.18+r()*.3)*(k===4?.08:1),a:[.05+r()*.1,.02+r()*.06,.01+r()*.03].map(v=>k===4?v*.12:v),f:[.8+r()*1.2,2+r()*2.5,5+r()*4],p:[r()*6,r()*6,r()*6]}));this.ghost=this.S.map(s=>this.y(s,this.tc0));this.ghostT=this.tc0;this.inked=false;},
+  y(s,t){let v=s.base+s.trend*t;for(let i=0;i<3;i++)v+=s.a[i]*Math.sin(s.f[i]*t*6.283+s.p[i])*Math.min(1,t*3);return clamp(v,.03,.97);},
+  resize(){if(!this.S)this.gen();const{w,h}=this;this.gx0=w*.05;this.gx1=w*(w<600?.95:.76);this.gy0=h*.15;this.gy1=h*.62;this.update();},
+  X(t){return lerp(this.gx0,this.gx1,t);},Y(v){return lerp(this.gy1,this.gy0,v);},
+  drift(){const d=this.S.map((s,k)=>Math.abs(this.y(s,this.tc)-this.ghost[k]));const story=(d[0]+d[1]+d[2])/3,lang=d[3],expr=d[4];let mk=0;for(let k=1;k<3;k++)if(d[k]>d[mk])mk=k;return{d,story,lang,expr,mk};},
+  update(){const D=this.drift();const late=clamp(D.story/0.28,0,1);let verdict,code;
+    if(D.story<.05){code='IN PHASE';verdict='The slice still portrays the network. Keep the surface in good repair: a refresh at most, and protect what makes the mark irreplaceable.';}
+    else if(D.story<.11){code='DRIFTING';verdict='The processes are moving away from the cut. Begin with language: does the name and description still say what the business now is, in the buyer\'s words?';}
+    else{code='LATE';verdict='The story has moved. The first identity was not wrong; it is late. This is rebrand territory: take a new cut, then settle language before expression.';}
+    if(this.inked&&D.story>=.05)verdict+=' <b>You re-inked only the expression line.</b> The mark looks new, but the story gaps are still open: changing only the surface when the story has moved.';
+    $('#cutOut').innerHTML='<span class="code">'+code+' · out of phase '+Math.round(late*100)+'%</span><div class="kv">'+
+      '<div><b>Story drift</b>'+Math.round(D.story*100)+'<div class="bar r"><i style="width:'+clamp(D.story/.3,0,1)*100+'%"></i></div></div>'+
+      '<div><b>Language drift</b>'+Math.round(D.lang*100)+'<div class="bar"><i style="width:'+clamp(D.lang/.3,0,1)*100+'%"></i></div></div>'+
+      '<div><b>Expression drift</b>'+Math.round(D.expr*100)+'<div class="bar"><i style="width:'+clamp(D.expr/.3,0,1)*100+'%"></i></div></div>'+
+      '<div><b>Moved most</b>'+STREAMS[D.mk].split(' · ')[0]+'</div></div>'+verdict;},
+  frame(dt){const{ctx,w,h}=this;ctx.clearRect(0,0,w,h);bg(ctx,w,h);
+    // time grid
+    ctx.strokeStyle='rgba(79,163,255,.1)';ctx.lineWidth=1;for(let k=0;k<=10;k++){const x=this.X(k/10);ctx.beginPath();ctx.moveTo(x,this.gy0-6);ctx.lineTo(x,this.gy1+6);ctx.stroke();}
+    T(ctx,'FOUNDING',this.X(0),this.gy1+22,{size:9,ls:2});T(ctx,'TODAY',this.X(1),this.gy1+22,{size:9,ls:2,align:'right'});
+    for(let k=1;k<4;k++)T(ctx,'YR '+k*5,this.X(k/4),this.gy1+22,{size:9,align:'center',a:.7});
+    T(ctx,'CONVERGING PROCESSES OF ONE BRAND-EVENT',this.gx0,this.gy0-14,{size:9,ls:2,col:C.volt});
+    // gaps (lateness) between ghost and actual
+    const tA=this.ghostT,tB=this.tc;
+    if(tB>tA)this.S.forEach((s,k)=>{ctx.beginPath();for(let t=tA;t<=tB;t+=.005)ctx.lineTo(this.X(t),this.Y(this.y(s,t)));ctx.lineTo(this.X(tB),this.Y(this.ghost[k]));ctx.lineTo(this.X(tA),this.Y(this.ghost[k]));ctx.closePath();ctx.fillStyle=k===4?'rgba(234,245,255,.06)':'rgba(226,52,43,.13)';ctx.fill();});
+    // streams
+    this.S.forEach((s,k)=>{ctx.beginPath();for(let t=0;t<=1.0001;t+=.004){const x=this.X(t),y=this.Y(this.y(s,t));t===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+      ctx.strokeStyle=SCOL[k];ctx.lineWidth=k===4?2.2:2.6;ctx.globalAlpha=.9;glow(ctx,C.el,10);ctx.stroke();noGlow(ctx);ctx.globalAlpha=1;
+      // ghost (held still)
+      ctx.setLineDash([3,5]);ctx.strokeStyle='rgba(226,52,43,.75)';ctx.lineWidth=1.3;ctx.beginPath();ctx.moveTo(this.X(tA),this.Y(this.ghost[k]));ctx.lineTo(this.X(1),this.Y(this.ghost[k]));ctx.stroke();ctx.setLineDash([]);
+      if(w>=600)T(ctx,s.n,this.gx1+12,this.Y(this.y(s,1))+4,{size:10,col:SCOL[k]});});
+    // pulses travelling along streams
+    const tt=(this.t*0.12)%1;this.S.forEach((s,k)=>{const t=(tt+k*.17)%1;ctx.fillStyle='#fff';glow(ctx,'#fff',14);ctx.beginPath();ctx.arc(this.X(t),this.Y(this.y(s,t)),2.4,0,7);ctx.fill();noGlow(ctx);});
+    // cuts
+    const cutLine=(t,col,lab,sub)=>{const x=this.X(t);ctx.strokeStyle=col;ctx.lineWidth=2;glow(ctx,col,14);ctx.beginPath();ctx.moveTo(x,this.gy0-4);ctx.lineTo(x,this.gy1+4);ctx.stroke();noGlow(ctx);T(ctx,lab,x,this.gy0-28,{size:9,col,align:t>.6?'right':'left',ls:1.5});if(sub)T(ctx,sub,x,this.gy0-16,{size:9,col:C.dim,align:t>.6?'right':'left',it:false});};
+    cutLine(tA,C.red,'IDENTITY · THE CUT HELD STILL','');
+    cutLine(tB,C.volt,'NOW · DRAG ME','');
+    ctx.fillStyle=C.volt;glow(ctx,C.el,16);ctx.beginPath();ctx.arc(this.X(tB),this.gy1+4,6,0,7);ctx.fill();noGlow(ctx);
+    // portraits
+    const py=lerp(this.gy1+38,h-8,.5),pr=Math.min((h-this.gy1-50)/2,w*.17);
+    const portrait=(cx,vals,lab,col)=>{ctx.strokeStyle='rgba(79,163,255,.18)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,py,pr,0,7);ctx.stroke();
+      const P=vals.map((v,k)=>{const a=-Math.PI/2+k*2*Math.PI/5;const rr=pr*(.25+.72*v);return[cx+Math.cos(a)*rr,py+Math.sin(a)*rr];});
+      for(let i=0;i<5;i++)for(let j=i+1;j<5;j++){const d=Math.abs(vals[i]-vals[j]);if(d<.26){ctx.strokeStyle=hex2(col==='r'?'#e2342b':'#4fa3ff',(1-d/.26)*.8);ctx.lineWidth=1+(1-d/.26)*2;ctx.beginPath();ctx.moveTo(P[i][0],P[i][1]);ctx.lineTo(P[j][0],P[j][1]);ctx.stroke();}}
+      P.forEach((p,k)=>{ctx.fillStyle=SCOL[k];glow(ctx,C.el,12);ctx.beginPath();ctx.arc(p[0],p[1],4.5,0,7);ctx.fill();noGlow(ctx);});
+      T(ctx,lab,cx,py+pr+14>h-2?py-pr-6:py+pr+14,{size:9,align:'center',ls:1.5,col:col==='r'?C.red:C.volt});};
+    portrait(w*.27,this.ghost,'PORTRAIT AT THE IDENTITY CUT','r');
+    portrait(w*.73,this.S.map(s=>this.y(s,tB)),'PORTRAIT AT THE PRESENT CUT','b');
+    T(ctx,'the network the identity portrays',w*.5,py-6,{size:13,fam:'eb',it:true,align:'center',col:C.dim});
+    T(ctx,'→  the network that now exists',w*.5,py+12,{size:13,fam:'eb',it:true,align:'center',col:C.glow});}
+});
+(function(){const cv=cut.cv;const pick=e=>{const p=ptr(e,cv);cut.tc=clamp((p.x-cut.gx0)/(cut.gx1-cut.gx0),0,1);cut.update();};
+  cv.addEventListener('pointerdown',e=>{if(ptr(e,cv).y>cut.gy1+30)return;cut.drag=true;cv.setPointerCapture(e.pointerId);pick(e);});
+  cv.addEventListener('pointermove',e=>{if(cut.drag)pick(e);});cv.addEventListener('pointerup',()=>cut.drag=false);
+  $$('#cutFig .ctrl button').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
+    if(a==='rebrand'){cut.ghostT=cut.tc;cut.ghost=cut.S.map(s=>cut.y(s,cut.tc));cut.inked=false;}
+    if(a==='refresh'){cut.ghost[4]=cut.y(cut.S[4],cut.tc);cut.inked=true;}
+    if(a==='seed'){cut.seed=(Math.random()*1e9)|0;cut.gen();}
+    if(a==='reset'){cut.gen();}
+    cut.update();});})();
+
+/* =====================================================================
+   IV · THE FIELD OF MADE MOMENTS
+   ===================================================================== */
+const TRI_PRESETS=[['Flight (Kerr)',[.9,.05,.05]],['The dérive, 1957',[.15,.82,.03]],['Art of Hosting gathering',[.2,.5,.3]],['Honest rebrand, story first',[.38,.1,.52]],['7UP launch, 2026',[.12,.25,.63]],['The Amputation Playbook',[.42,.03,.55]],['Le Chat Noir',[.3,.65,.05]]];
+const tri=reg({cv:$('#triCv'),aspect:.7,w3:[.12,.25,.63],drag:false,parts:[],
+  resize(){const{w,h}=this;this.V=[[w*.5,h*.14],[w*.12,h*.85],[w*.88,h*.85]];if(!this.parts.length)for(let k=0;k<120;k++)this.parts.push({e:k%3,t:Math.random(),s:.04+Math.random()*.08});this.update();},
+  P(){const[a,b,c]=this.w3,V=this.V;return[a*V[0][0]+b*V[1][0]+c*V[2][0],a*V[0][1]+b*V[1][1]+c*V[2][1]];},
+  bary(x,y){const[A,B,Cc]=this.V;const d=(B[1]-Cc[1])*(A[0]-Cc[0])+(Cc[0]-B[0])*(A[1]-Cc[1]);const l1=((B[1]-Cc[1])*(x-Cc[0])+(Cc[0]-B[0])*(y-Cc[1]))/d;const l2=((Cc[1]-A[1])*(x-Cc[0])+(A[0]-Cc[0])*(y-Cc[1]))/d;const a=[l1,l2,1-l1-l2].map(v=>Math.max(0,v));const s=a[0]+a[1]+a[2]||1;return a.map(v=>v/s);},
+  update(){const[e,s,a]=this.w3;const pc=v=>Math.round(v*100)+'%';const constructed=s+a,durable=e+a*.85,lived=s,watched=a,address=clamp(a+s*.55+e*.05,0,1);
+    const dom=['EVENT','SITUATION','ACT'][this.w3.indexOf(Math.max(e,s,a))];let v=[];
+    if(dom==='EVENT')v.push('Mostly weather: an unconstructed becoming that persists while its conditions hold. No one organised it, so no one is obviously answerable for it.');
+    if(dom==='SITUATION')v.push('A game of events, deliberately organised to be lived rather than watched. Intense, collective and built to pass.');
+    if(dom==='ACT')v.push('A sponsored moment with a budget line and a signature. Durable and accountable, and staged inside the market.');
+    if(e>.3&&a>.3)v.push('<b>ALIBI RISK.</b> A sponsored act that can describe itself as weather: "the design system invented me."');
+    if(a>.5&&s<.2)v.push('<b>PSEUDO-EVENT.</b> Staged mainly to be reported (Boorstin). Expect the form to make its readers passive.');
+    if(s>.45)v.push('<b>RECUPERATION AHEAD.</b> Ephemeral by design; the spectacle will turn it into a style.');
+    if(e>.7)v.push('<b>NO ADDRESS.</b> Answerability is not given here. It would have to be built.');
+    if(a>.25&&s>.2&&e>.15)v.push('<b>MIXED.</b> All three inheritances are present. The question is which one will be allowed to speak.');
+    $('#triOut').innerHTML='<span class="code">Dominant · '+dom+'</span><div class="kv">'+
+      [['Event',e,''],['Situation',s,' r'],['Act',a,'']].map(([n,val,c])=>'<div><b>'+n+'</b>'+pc(val)+'<div class="bar'+c+'"><i style="width:'+val*100+'%"></i></div></div>').join('')+
+      '<div><b>Constructed</b>'+pc(constructed)+'</div><div><b>Durable</b>'+pc(clamp(durable,0,1))+'</div><div><b>Lived : watched</b>'+pc(lived)+' : '+pc(watched)+'</div><div><b>Answerable</b>'+pc(address)+'<div class="bar r"><i style="width:'+address*100+'%"></i></div></div></div>'+v.join(' ');},
+  frame(dt){const{ctx,w,h}=this,V=this.V;ctx.clearRect(0,0,w,h);bg(ctx,w,h);
+    ctx.strokeStyle='rgba(79,163,255,.08)';ctx.lineWidth=1;
+    for(let k=1;k<10;k++){const f=k/10;for(let q=0;q<3;q++){const A=V[q],B=V[(q+1)%3],Cc=V[(q+2)%3];ctx.beginPath();ctx.moveTo(lerp(A[0],B[0],f),lerp(A[1],B[1],f));ctx.lineTo(lerp(A[0],Cc[0],f),lerp(A[1],Cc[1],f));ctx.stroke();}}
+    ctx.strokeStyle='rgba(79,163,255,.55)';ctx.lineWidth=1.5;glow(ctx,C.el,12);ctx.beginPath();ctx.moveTo(V[0][0],V[0][1]);ctx.lineTo(V[1][0],V[1][1]);ctx.lineTo(V[2][0],V[2][1]);ctx.closePath();ctx.stroke();noGlow(ctx);
+    const E=[[0,1],[0,2],[1,2]];this.parts.forEach(p=>{p.t=(p.t+p.s*dt)%1;const[a,b]=E[p.e];const x=lerp(V[a][0],V[b][0],p.t),y=lerp(V[a][1],V[b][1],p.t);ctx.fillStyle=p.e===2?'rgba(226,52,43,.8)':'rgba(159,214,255,.85)';ctx.fillRect(x-1,y-1,2,2);});
+    const el=(a,b,s,off)=>{const x=(V[a][0]+V[b][0])/2,y=(V[a][1]+V[b][1])/2;ctx.save();ctx.translate(x,y);let ang=Math.atan2(V[b][1]-V[a][1],V[b][0]-V[a][0]);if(ang>Math.PI/2||ang<-Math.PI/2)ang+=Math.PI;ctx.rotate(ang);T(ctx,s,0,off,{size:13,fam:'eb',it:true,align:'center',col:C.dim});ctx.restore();};
+    el(0,1,'a game of events',-10);el(0,2,'a cut in a long becoming',-10);el(1,2,'a moment staged for spectators',22);
+    const P=this.P();const cols=[C.glow,C.red,C.volt];
+    for(let q=0;q<3;q++){ctx.strokeStyle=hex2(q===1?'#e2342b':'#4fa3ff',.25+this.w3[q]*.65);ctx.lineWidth=1+this.w3[q]*10;ctx.beginPath();ctx.moveTo(P[0],P[1]);ctx.lineTo(V[q][0],V[q][1]);ctx.stroke();}
+    const lab=[['EVENT','Kerr · unconstructed · persists'],['SITUATION','Debord · constructed · lived · ephemeral'],['ACT','Monroy · sponsored · watched · durable']];
+    V.forEach((v,q)=>{ctx.fillStyle=cols[q];glow(ctx,cols[q],22);ctx.beginPath();ctx.arc(v[0],v[1],8+this.w3[q]*7,0,7);ctx.fill();noGlow(ctx);
+      const up=q===0;T(ctx,lab[q][0],v[0]+(q===1?-4:q===2?4:0),up?v[1]-24:v[1]+30,{size:22,fam:'serif',w:700,col:'#fff',align:q===1?'left':q===2?'right':'center',glow:C.el,blur:16});
+      T(ctx,lab[q][1],v[0]+(q===1?-4:q===2?4:0),up?v[1]-10:v[1]+46,{size:9,col:C.dim,align:q===1?'left':q===2?'right':'center',ls:1});});
+    const pul=1+Math.sin(this.t*3)*.25;ctx.strokeStyle=C.red;ctx.lineWidth=2;glow(ctx,C.red,16);ctx.beginPath();ctx.arc(P[0],P[1],14*pul,0,7);ctx.stroke();ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(P[0],P[1],5,0,7);ctx.fill();noGlow(ctx);
+    if(this.name)T(ctx,this.name,P[0]+20,P[1]-14,{size:15,fam:'eb',it:true,col:'#fff',glow:C.el});}
+});
+(function(){const cv=tri.cv,set=e=>{const p=ptr(e,cv);tri.w3=tri.bary(p.x,p.y);tri.name='';tri.update();};
+  cv.addEventListener('pointerdown',e=>{tri.drag=true;cv.setPointerCapture(e.pointerId);set(e);});cv.addEventListener('pointermove',e=>{if(tri.drag)set(e);});cv.addEventListener('pointerup',()=>tri.drag=false);
+  const box=$('#triPresets');TRI_PRESETS.forEach(([n,v])=>{const b=document.createElement('button');b.textContent=n;b.onclick=()=>{const from=tri.w3.slice(),t0=performance.now();tri.name=n;(function step(){const k=ease((performance.now()-t0)/600);tri.w3=from.map((f,i)=>lerp(f,v[i],k));tri.update();if(k<1)requestAnimationFrame(step);})();};box.appendChild(b);});})();
+
+/* =====================================================================
+   V · THE WATER
+   ===================================================================== */
+const MICRO=['old name in a footer','unrevised invoice template','supplier PDF, 2019','an email signature','app-store listing','"About" page, two versions','packaging line, warehouse 3','press archive','directory profile','a recruiter\'s job ad','the old domain\'s redirect','a sales deck from last year'];
+const GAPS=['old name / new name','"studio" vs "consultancy"','two addresses','stale description','wrong category word','2019 profile'];
+const water=reg({cv:$('#waterCv'),aspect:.62,mode:'human',hft:40,coh:.72,phase:'idle',shownOnce:false,
+  resize(){const{w,h}=this;this.y0=h*.5;this.grid=[];const sp=Math.max(13,w/50);for(let y=this.y0+sp*.6;y<h-4;y+=sp)for(let x=sp/2;x<w;x+=sp)this.grid.push({rx:x,ry:y,x,y,vx:0,vy:0});this.init();},
+  init(){this.phase='idle';this.splash=[];this.cracks=[];this.flash=0;this.shake=0;this.res=null;this.word='';this.wordA=0;
+    this.st={x:-30,y:this.y0,vy:0,fallen:false,pass:0,miss:0,msg:'',msgA:0};this.genGaps();this.genMicro();this.update();},
+  genGaps(){const n=Math.round((1-this.coh)*8);const r=mulberry(4242+n);this.gaps=[];for(let k=0;k<n;k++){const x=this.w*(.18+.78*((k+.5)/n)+(r()-.5)*.06);this.gaps.push({x,wd:16+r()*26,lab:GAPS[k%GAPS.length]});}},
+  genMicro(){const{w,h}=this;const r=Math.max(7,w/70);this.mr=r;this.marb=[];for(let k=0;k<Math.round(w*h/(r*r*28));k++){this.marb.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*60,vy:(Math.random()-.5)*60,stale:Math.random()>this.coh,hit:0});}
+    this.bac={x:w/2,y:h/2,vx:20,vy:0,ang:0};this.tally={ok:0,stale:0};this.flo=[];},
+  onShow(){if(!this.shownOnce&&this.mode==='human'){this.shownOnce=true;setTimeout(()=>this.drop(),500);}},
+  drop(){const v=Math.min(55,Math.sqrt(2*9.81*this.hft*.3048));const k=clamp((v-15)/(32-15),0,1);const d=lerp(4,.04,Math.pow(k,.55));
+    this.res={v,k,g:v*v/(2*d)/9.81,ms:2*d/v*1000};this.phase='fall';this.tt=0;this.dy=this.h*.04;this.splash=[];this.cracks=[];this.flash=0;this.shake=0;this.word='';this.wordA=0;
+    this.grid.forEach(p=>{p.x=p.rx;p.y=p.ry;p.vx=p.vy=0;});this.update();},
+  impact(){const{k,v}=this.res,x=this.w*.36,y0=this.y0;
+    this.grid.forEach(p=>{const dx=p.rx-x,dy=p.ry-y0,d=Math.hypot(dx,dy)+1;const s=(1-k)*v*90/(d*.06+3);p.vx+=dx/d*s*(1-k*.9)*.6;p.vy+=dy/d*s*.6;});
+    const nS=Math.round((1-k)*46+k*26);for(let i=0;i<nS;i++){const a=-Math.PI/2+(Math.random()-.5)*(k>.6?2.8:1.4);const sp=(k>.6?160:90+v*7)*(.4+Math.random());this.splash.push({x,y:y0,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,shard:k>.6});}
+    if(k>.35){const n=Math.round(6+k*16);for(let i=0;i<n;i++){let ang=Math.random()*Math.PI*2,len=(40+Math.random()*this.w*.32)*k,pts=[[x,y0]],cx=x,cy=y0;const segs=6+Math.floor(Math.random()*6);
+      for(let s=0;s<segs;s++){ang+=(Math.random()-.5)*.7;cx+=Math.cos(ang)*len/segs;cy+=Math.sin(ang)*len/segs*.22;pts.push([cx,cy]);}this.cracks.push(pts);}}
+    this.flash=k*.9;this.shake=k*16;this.word=k<.3?'LIQUID':k<.7?'STIFFENING':'SOLID';this.wordA=1;},
+  update(){const o=$('#waterOut');if(this.mode==='human'){const v=Math.min(55,Math.sqrt(2*9.81*this.hft*.3048)),k=clamp((v-15)/17,0,1);const yrs=Math.max(1,Math.round(this.hft/22));
+      let code,txt;if(k<.3){code='LIQUID · the casual reader';txt='The redesign parts around this reader and slows them gently. They surface and report a fresh new look. For them this was a change of degree.';}
+      else if(k<.7){code='STIFFENING · the regular reader';txt='Resistance builds. A tidier palette is felt as a nudge to the story. The reader does not yet break, but the water no longer simply parts.';}
+      else{code='SOLID · the committed reader';txt='The same redesign arrives as a surface, with no gradual slowing. This is Walsh, Winterich and Mittal\'s committed consumer: the reader who has paid most to learn the mark is least able to absorb its change.';}
+      const r=this.res;o.innerHTML='<span class="code">'+code+'</span><div class="kv"><div><b>Height</b>'+this.hft+' ft</div><div><b>Impact speed</b>'+v.toFixed(1)+' m/s</div><div><b>Commitment, read as</b>≈ '+yrs+' yr'+(yrs>1?'s':'')+' of weekly encounters</div><div><b>Peak deceleration</b>'+(r?Math.round(r.g).toLocaleString()+' g':'drop to measure')+'</div></div>'+txt;}
+    else if(this.mode==='strider'){const n=this.gaps.length;o.innerHTML='<span class="code">SURFACE TENSION · the machine reader</span><div class="kv"><div><b>Record coherence</b>'+Math.round(this.coh*100)+'%<div class="bar"><i style="width:'+this.coh*100+'%"></i></div></div><div><b>Contradictions</b>'+n+'</div><div><b>Crossings</b>'+this.st.pass+'</div><div><b>Fell through</b>'+this.st.miss+'</div></div>The strider never feels the body of the water, or the hand in the mark. It reads names, descriptions and whether they agree. Every contradiction is a break in surface tension: where the old name persists beside the new, the system is handed evidence of two firms, and the shortlist falls through.';}
+    else{const tot=this.tally.ok+this.tally.stale||1;o.innerHTML='<span class="code">COLLISIONS · the micro-encounter</span><div class="kv"><div><b>Coherent</b>'+this.tally.ok+'</div><div><b>Stale</b>'+this.tally.stale+'</div><div><b>Stale share</b>'+Math.round(this.tally.stale/tot*100)+'%<div class="bar r"><i style="width:'+this.tally.stale/tot*100+'%"></i></div></div><div><b>Record coherence</b>'+Math.round(this.coh*100)+'%</div></div>At this scale the brand is not an identity but a scatter of collisions: one footer, one template, one supplier PDF at a time. Rebrands fail here constantly and invisibly. Coherence is decided collision by collision, long after the launch.';}},
+  frame(dt){const{ctx,w,h}=this;ctx.clearRect(0,0,w,h);ctx.save();
+    if(this.shake>0){ctx.translate((Math.random()-.5)*this.shake,(Math.random()-.5)*this.shake);this.shake*=Math.pow(.02,dt);if(this.shake<.3)this.shake=0;}
+    bg(ctx,w,h);if(this.mode==='human')this.human(dt);else if(this.mode==='strider')this.strider(dt);else this.micro(dt);ctx.restore();
+    if(this.flash>0){ctx.fillStyle='rgba(234,245,255,'+this.flash+')';ctx.fillRect(0,0,w,h);this.flash=Math.max(0,this.flash-dt*2.2);}},
+  sea(ctx,w,h,y0,tint){const g=ctx.createLinearGradient(0,y0,0,h);g.addColorStop(0,'rgba(47,123,255,'+(.42+tint*.2)+')');g.addColorStop(1,'rgba(5,10,36,.4)');ctx.fillStyle=g;ctx.fillRect(0,y0,w,h-y0);},
+  human(dt){const{ctx,w,h}=this,y0=this.y0,x=w*.36,r=this.res;const k=r?r.k:0;
+    // ruler
+    ctx.strokeStyle='rgba(79,163,255,.35)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(w*.08,h*.05);ctx.lineTo(w*.08,y0);ctx.stroke();
+    [[500,'500 ft'],[250,'250'],[100,'100'],[40,'40']].forEach(([f,l])=>{const yy=lerp(y0,h*.05,f/500);ctx.beginPath();ctx.moveTo(w*.08-5,yy);ctx.lineTo(w*.08+5,yy);ctx.stroke();T(ctx,l,w*.08-9,yy+3,{size:9,align:'right'});});
+    const hy=lerp(y0,h*.05,this.hft/500);ctx.strokeStyle=C.red;ctx.setLineDash([3,4]);ctx.beginPath();ctx.moveTo(w*.08,hy);ctx.lineTo(x,hy);ctx.stroke();ctx.setLineDash([]);T(ctx,'DROP · '+this.hft+' FT',w*.08+10,hy-6,{size:9,col:C.red,ls:1.5});
+    // sea + particles
+    this.sea(ctx,w,h,y0,k);const ks=30,dmp=4.5;
+    this.grid.forEach(p=>{p.vx+=((p.rx-p.x)*ks-p.vx*dmp)*dt;p.vy+=((p.ry-p.y)*ks-p.vy*dmp)*dt;
+      if(this.phase==='enter'&&k<.75){const dx=p.x-x,dy=p.y-this.dy,d=Math.hypot(dx,dy);if(d<26){p.vx+=dx/(d+1)*400*dt;p.vy+=dy/(d+1)*400*dt;}}
+      p.x+=p.vx*dt;p.y+=p.vy*dt;const disp=Math.min(1,Math.hypot(p.x-p.rx,p.y-p.ry)/14);ctx.fillStyle='rgba('+Math.round(lerp(79,234,disp))+','+Math.round(lerp(163,245,disp))+',255,'+(.28+disp*.6)+')';ctx.fillRect(p.x-1.2,p.y-1.2,2.4,2.4);});
+    // surface
+    ctx.beginPath();for(let xx=0;xx<=w;xx+=4){let yy=y0+Math.sin(xx*.03+this.t*1.4)*1.6;if(this.phase!=='idle'&&this.phase!=='fall'&&k<.75){const d=Math.abs(xx-x);yy+=Math.sin(d*.09-this.tt*9)*Math.exp(-d*.012-this.tt*.8)*9*(1-k);}xx===0?ctx.moveTo(xx,yy):ctx.lineTo(xx,yy);}
+    ctx.strokeStyle=k>.7&&this.phase!=='idle'&&this.phase!=='fall'?'#eaf5ff':C.volt;ctx.lineWidth=2;glow(ctx,C.el,14);ctx.stroke();noGlow(ctx);
+    // cracks
+    this.cracks.forEach(pts=>{ctx.beginPath();pts.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.strokeStyle='rgba(234,245,255,.9)';ctx.lineWidth=1.6;glow(ctx,C.red,12);ctx.stroke();noGlow(ctx);});
+    // diver
+    if(this.phase==='fall'){this.tt+=dt;const T0=.55+this.hft/500*.75,f=this.tt/T0;this.dy=lerp(hy,y0,f*f);
+      for(let q=1;q<6;q++){ctx.fillStyle='rgba(159,214,255,'+(.12/q)+')';ctx.fillRect(x-3,this.dy-q*14*(.3+f),6,10);}
+      if(f>=1){this.dy=y0;this.phase='enter';this.tt=0;this.impact();}}
+    else if(this.phase==='enter'){this.tt+=dt;const dur=lerp(1.1,.05,k),depth=(1-k)*(h-y0)*.62;
+      if(k<.75){const sink=depth*(1-Math.exp(-this.tt*4/Math.max(dur,.05)));const rise=this.tt>dur*1.8?Math.min(sink-6,(this.tt-dur*1.8)*28):0;this.dy=y0+sink-rise;
+        if(Math.random()<.4)this.splash.push({x:x+(Math.random()-.5)*8,y:this.dy,vx:(Math.random()-.5)*10,vy:-30-Math.random()*30,life:1,bub:true});}
+      else this.dy=y0;}
+    if(this.phase!=='idle'){ctx.save();ctx.translate(x,this.dy);const crumple=this.phase==='enter'&&k>.7;if(crumple){ctx.rotate(1.25);ctx.scale(1.25,.55);}
+      ctx.fillStyle='#fff';glow(ctx,crumple?C.red:'#9fd6ff',crumple?26:18);ctx.beginPath();ctx.roundRect?ctx.roundRect(-4.5,-26,9,28,4.5):ctx.rect(-4.5,-26,9,28);ctx.fill();ctx.beginPath();ctx.arc(0,-31,5,0,7);ctx.fill();noGlow(ctx);ctx.restore();}
+    else{ctx.fillStyle='rgba(234,245,255,.8)';glow(ctx,'#9fd6ff',14);ctx.beginPath();ctx.arc(x,hy-12,5,0,7);ctx.fill();ctx.fillRect(x-4,hy-6,8,22);noGlow(ctx);}
+    // splash
+    this.splash=this.splash.filter(s=>{s.life-=dt*(s.bub?.9:.8);if(s.bub){s.y+=s.vy*dt;if(s.y<y0)s.life=0;}else{s.vy+=380*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;if(s.y>y0+2&&s.vy>0)s.life=0;}
+      if(s.life<=0)return false;ctx.fillStyle=s.shard?'rgba(234,245,255,'+s.life+')':s.bub?'rgba(159,214,255,'+s.life*.6+')':'rgba(159,214,255,'+s.life+')';
+      if(s.shard){ctx.save();ctx.translate(s.x,s.y);ctx.rotate(s.x);ctx.fillRect(-3,-1,6,2);ctx.restore();}else{ctx.beginPath();ctx.arc(s.x,s.y,s.bub?2:1.8,0,7);ctx.fill();}return true;});
+    if(this.word){T(ctx,this.word,x,y0-48,{size:34,fam:'serif',w:700,align:'center',col:this.word==='SOLID'?'#fff':C.glow,glow:this.word==='SOLID'?C.red:C.el,blur:22,a:this.wordA});}
+    // inset: deceleration
+    const bx=w*.6,by=h*.06,bw=w*.36,bh=h*.3;ctx.fillStyle='rgba(2,4,15,.7)';ctx.fillRect(bx,by,bw,bh);ctx.strokeStyle='rgba(79,163,255,.35)';ctx.strokeRect(bx,by,bw,bh);
+    T(ctx,'DECELERATION ON ENTRY',bx+8,by+14,{size:9,col:C.volt,ls:1.5});T(ctx,'log g',bx+8,by+bh-6,{size:8});
+    const curve=(kk,col,alpha,lab)=>{const v=Math.min(55,Math.sqrt(2*9.81*(kk<0?40:this.hft)*.3048)),kq=clamp((v-15)/17,0,1),d=lerp(4,.04,Math.pow(kq,.55)),g=v*v/(2*d)/9.81;const pk=clamp(Math.log10(g)/Math.log10(5000),0,1)*(bh-30),sig=lerp(.22,.012,Math.pow(kq,.5));
+      ctx.beginPath();for(let i=0;i<=100;i++){const u=i/100,yy=by+bh-10-pk*Math.exp(-Math.pow((u-.3)/sig,2)/2);i?ctx.lineTo(bx+8+u*(bw-16),yy):ctx.moveTo(bx+8,yy);}ctx.strokeStyle=col;ctx.globalAlpha=alpha;ctx.lineWidth=2;glow(ctx,col,10);ctx.stroke();noGlow(ctx);ctx.globalAlpha=1;
+      if(lab)T(ctx,lab,bx+bw-8,by+14,{size:9,align:'right',col});};
+    curve(-1,C.volt,.45,'');if(r){curve(1,k>.7?C.red:C.glow,1,'≈ '+Math.round(r.g).toLocaleString()+' g over '+(r.ms<10?r.ms.toFixed(1):Math.round(r.ms))+' ms');}
+    T(ctx,'40 ft reference',bx+8,by+28,{size:8,col:C.dim,a:.8});
+    if(this.wordA>0&&this.phase==='enter'&&this.tt>2.4)this.wordA=Math.max(0,this.wordA-dt*.4);},
+  strider(dt){const{ctx,w,h}=this,y0=this.y0,st=this.st;this.sea(ctx,w,h,y0,0);
+    T(ctx,'THE BODY OF THE WATER · UNFELT BY THE STRIDER',w/2,h-14,{size:9,align:'center',ls:2,a:.6});
+    T(ctx,'THE RECORD · ITS SURFACE TENSION',w/2,y0-70,{size:9,align:'center',ls:2,col:C.volt});
+    const inGap=x=>this.gaps.find(g=>Math.abs(x-g.x)<g.wd/2);
+    if(!st.fallen){st.x+=dt*w*.09;const g=inGap(st.x);if(g){st.fallen=true;st.vy=0;st.miss++;st.msg='FELL THROUGH · handed evidence of two firms';st.msgA=1;this.update();}if(st.x>w+30){st.pass++;st.x=-30;st.msg='CROSSED · one story resolved';st.msgA=1;this.update();}}
+    else{st.vy+=260*dt;st.y+=st.vy*dt;if(st.y>h+40){st.fallen=false;st.y=y0;st.x=-30;}}
+    const feet=st.fallen?[]:[-16,-7,7,16].map(o=>st.x+o);
+    ctx.beginPath();let pen=false;for(let x=0;x<=w;x+=3){if(inGap(x)){pen=false;continue;}let yy=y0+Math.sin(x*.04+this.t)*1.2;feet.forEach(f=>{yy+=5*Math.exp(-Math.pow((x-f)/7,2));});pen?ctx.lineTo(x,yy):ctx.moveTo(x,yy);pen=true;}
+    ctx.strokeStyle=C.glow;ctx.lineWidth=2.2;glow(ctx,C.el,16);ctx.stroke();noGlow(ctx);
+    this.gaps.forEach((g,i)=>{ctx.strokeStyle=C.red;ctx.lineWidth=2;glow(ctx,C.red,12);[-1,1].forEach(sn=>{ctx.beginPath();ctx.moveTo(g.x+sn*g.wd/2,y0-6);ctx.lineTo(g.x+sn*g.wd/2,y0+6);ctx.stroke();});noGlow(ctx);
+      T(ctx,g.lab,g.x,y0+(i%2?28:-18),{size:9,align:'center',col:'#ffb3ad'});});
+    // strider
+    ctx.save();ctx.translate(st.x,st.fallen?st.y:y0-6);if(st.fallen)ctx.rotate(st.vy*.004);ctx.strokeStyle='#5fe0c0';ctx.lineWidth=1.6;glow(ctx,'#2fbf9f',12);
+    [-16,-7,7,16].forEach((o,i)=>{ctx.beginPath();ctx.moveTo(0,0);ctx.quadraticCurveTo(o*.6,-8,o,6+(st.fallen?0:Math.sin(this.t*10+i)*1));ctx.stroke();});
+    ctx.fillStyle='#bff5e6';ctx.beginPath();ctx.ellipse(0,-1,10,3.4,0,0,7);ctx.fill();noGlow(ctx);ctx.restore();
+    if(st.msgA>0){T(ctx,st.msg,w/2,h*.14,{size:13,align:'center',col:st.msg.startsWith('FELL')?'#ffb3ad':C.glow,glow:st.msg.startsWith('FELL')?C.red:C.el,a:st.msgA,ls:1.5});st.msgA-=dt*.35;}},
+  micro(dt){const{ctx,w,h}=this,r=this.mr,b=this.bac;
+    this.marb.forEach(m=>{m.vx+=(Math.random()-.5)*400*dt;m.vy+=(Math.random()-.5)*400*dt;m.vx*=.99;m.vy*=.99;const sp=Math.hypot(m.vx,m.vy);if(sp>90){m.vx*=90/sp;m.vy*=90/sp;}m.x+=m.vx*dt;m.y+=m.vy*dt;
+      if(m.x<r){m.x=r;m.vx=Math.abs(m.vx);}if(m.x>w-r){m.x=w-r;m.vx=-Math.abs(m.vx);}if(m.y<r){m.y=r;m.vy=Math.abs(m.vy);}if(m.y>h-r){m.y=h-r;m.vy=-Math.abs(m.vy);}
+      const dx=b.x-m.x,dy=b.y-m.y,d=Math.hypot(dx,dy);if(d<r+6&&m.hit<=0){const nx=dx/(d||1),ny=dy/(d||1);b.vx+=nx*120;b.vy+=ny*120;m.vx-=nx*60;m.vy-=ny*60;m.hit=.6;
+        if(m.stale){this.tally.stale++;this.flo.push({s:MICRO[(Math.random()*MICRO.length)|0],x:b.x,y:b.y-14,a:1});}else this.tally.ok++;if((this.tally.ok+this.tally.stale)%3===0)this.update();}
+      m.hit-=dt;const hi=m.hit>0?m.hit/.6:0;
+      ctx.fillStyle=m.stale?'rgba(226,52,43,'+(.22+hi*.6)+')':'rgba(79,163,255,'+(.22+hi*.6)+')';ctx.strokeStyle=m.stale?'rgba(255,150,140,.55)':'rgba(159,214,255,.5)';ctx.lineWidth=1;ctx.beginPath();ctx.arc(m.x,m.y,r,0,7);ctx.fill();ctx.stroke();
+      ctx.fillStyle='rgba(255,255,255,'+(.25+hi*.5)+')';ctx.beginPath();ctx.arc(m.x-r*.35,m.y-r*.35,r*.25,0,7);ctx.fill();});
+    if(Math.random()<dt*.8)b.head=Math.random()*7;b.head=b.head??0;b.vx+=Math.cos(b.head)*70*dt;b.vy+=Math.sin(b.head)*70*dt;b.vx*=Math.pow(.35,dt);b.vy*=Math.pow(.35,dt);this._u=(this._u||0)+dt;if(this._u>.5){this._u=0;this.update();}b.x=clamp(b.x+b.vx*dt,10,w-10);b.y=clamp(b.y+b.vy*dt,10,h-10);if(b.x<=10||b.x>=w-10)b.vx*=-1;if(b.y<=10||b.y>=h-10)b.vy*=-1;b.ang=Math.atan2(b.vy,b.vx);
+    ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.ang);ctx.fillStyle='#fff';glow(ctx,C.red,22);ctx.beginPath();ctx.ellipse(0,0,8,3.6,0,0,7);ctx.fill();ctx.strokeStyle=C.red;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(-8,0);ctx.quadraticCurveTo(-14,Math.sin(this.t*20)*4,-19,0);ctx.stroke();noGlow(ctx);ctx.restore();
+    this.flo=this.flo.filter(f=>{f.a-=dt*.45;f.y-=dt*14;if(f.a<=0)return false;T(ctx,f.s,f.x,f.y,{size:11,align:'center',col:'#ffc9c4',glow:C.red,a:f.a});return true;});
+    const g=ctx.createRadialGradient(w/2,h/2,Math.min(w,h)*.35,w/2,h/2,Math.max(w,h)*.62);g.addColorStop(0,'rgba(2,4,15,0)');g.addColorStop(1,'rgba(2,4,15,.92)');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    T(ctx,'× 10⁴ · INSIDE ONE DROP OF THE BRAND',14,20,{size:9,ls:2,col:C.volt});}
+});
+(function(){const f=water;
+  $$('#waterFig .ctrl button[data-m]').forEach(b=>b.onclick=()=>{$$('#waterFig .ctrl button[data-m]').forEach(x=>x.classList.toggle('on',x===b));f.mode=b.dataset.m;
+    $('#hLab').style.display=f.mode==='human'?'':'none';$('#cLab').style.display=f.mode==='human'?'none':'';$('#dropBtn').style.display=f.mode==='human'?'':'none';$$('#waterFig button[data-a^="p"]').forEach(x=>x.style.display=f.mode==='human'?'':'none');f.init();if(f.mode==='human')setTimeout(()=>f.drop(),300);});
+  const hr=$('#hRange');hr.oninput=()=>{f.hft=+hr.value;$('#hVal').textContent=hr.value+' ft';f.phase='idle';f.res=null;f.cracks=[];f.word='';f.update();};hr.onchange=()=>f.drop();
+  const cr=$('#cRange');cr.oninput=()=>{f.coh=cr.value/100;$('#cVal').textContent=cr.value+'%';f.genGaps();f.marb&&f.marb.forEach(m=>m.stale=Math.random()>f.coh);f.update();};
+  $('#dropBtn').onclick=()=>f.drop();
+  $$('#waterFig button[data-a^="p"]').forEach(b=>b.onclick=()=>{const v=+b.dataset.a.slice(1);hr.value=v;f.hft=v;$('#hVal').textContent=v+' ft';f.drop();});})();
+
+/* =====================================================================
+   VI · THE RELATIONAL BOILING LINE
+   ===================================================================== */
+const th=reg({cv:$('#thCv'),aspect:.66,m:.32,lang:false,preset:'soft',drag:false,
+  curve(c){return .82-.64*c;},
+  sample(r){const p=this.preset;if(p==='soft')return r()<.55?r()*.4:.6+r()*.4;if(p==='bank')return .35+r()*.5;if(p==='mort')return r()*.32;return .2+r()*.55;},
+  gen(){const r=mulberry(this.preset.length*977+11);this.dots=[];const n=this.preset==='b2b'?70:190;for(let k=0;k<n;k++){const c=this.sample(r);this.dots.push({c,thr:clamp(this.curve(c)+(r()-.5)*.18,.03,.99),ph:r()*6,on:0});}this.update();},
+  resize(){const{w,h}=this;this.gx0=w*.1;this.gx1=w*.94;this.gy0=h*.08;this.gy1=h*.84;if(!this.dots)this.gen();},
+  update(){if(!this.dots)return;let n=0,eq=0,teq=0;this.dots.forEach(d=>{teq+=d.c;if(this.m>=d.thr){n++;eq+=d.c;}});const pct=n/this.dots.length,epct=eq/teq;
+    const names={soft:'Soft drink · daily, with a loyal core',bank:'Banking app · weekly',mort:'Mortgage · once a decade',b2b:'Consultancy · few readers, mid commitment'};
+    $('#thOut').innerHTML='<span class="code">'+names[this.preset]+'</span><div class="kv"><div><b>Readers crossing into kind</b>'+Math.round(pct*100)+'%<div class="bar r"><i style="width:'+pct*100+'%"></i></div></div><div><b>Commitment-weighted</b>'+Math.round(epct*100)+'%<div class="bar r"><i style="width:'+epct*100+'%"></i></div></div><div><b>Magnitude of change</b>'+Math.round(this.m*100)+'</div><div><b>Machine reader</b>'+(this.lang?'<span style="color:#e2342b">record changed</span>':'untouched')+'</div></div>'+
+      (epct>pct+.08?'The change reaches the committed first. By the sponsor\'s taxonomy this may be a refresh; for '+Math.round(epct*100)+'% of the accumulated equity it is a change in kind. ':'')+
+      (this.lang?'Because the change touches language, the strider sees it too: the record must now tell one story or the shortlist breaks.':'The machine reader does not feel an expression change at all. For it the layers really are separable.');},
+  frame(dt){const{ctx,w,h}=this,X=v=>lerp(this.gx0,this.gx1,v),Y=c=>lerp(this.gy1,this.gy0,c);ctx.clearRect(0,0,w,h);bg(ctx,w,h);
+    const mx=X(this.m);let g=ctx.createLinearGradient(this.gx0,0,mx,0);g.addColorStop(0,'rgba(226,52,43,.02)');g.addColorStop(1,'rgba(226,52,43,.16)');ctx.fillStyle=g;ctx.fillRect(this.gx0,this.gy0,mx-this.gx0,this.gy1-this.gy0);
+    ctx.strokeStyle='rgba(79,163,255,.12)';for(let k=0;k<=10;k++){ctx.beginPath();ctx.moveTo(X(k/10),this.gy0);ctx.lineTo(X(k/10),this.gy1);ctx.stroke();ctx.beginPath();ctx.moveTo(this.gx0,Y(k/10));ctx.lineTo(this.gx1,Y(k/10));ctx.stroke();}
+    ctx.strokeStyle='rgba(79,163,255,.5)';ctx.beginPath();ctx.moveTo(this.gx0,this.gy0);ctx.lineTo(this.gx0,this.gy1);ctx.lineTo(this.gx1,this.gy1);ctx.stroke();
+    ctx.setLineDash([6,5]);ctx.strokeStyle='rgba(234,245,255,.65)';ctx.lineWidth=1.5;ctx.beginPath();for(let c=0;c<=1;c+=.02){const x=X(this.curve(c)),y=Y(c);c===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();ctx.setLineDash([]);
+    T(ctx,'the relational boiling line',X(this.curve(.88))+8,Y(.88),{size:14,fam:'eb',it:true,col:'#fff'});
+    T(ctx,'MAGNITUDE OF SURFACE CHANGE →',this.gx1,this.gy1+30,{size:9,align:'right',ls:2});
+    [['tidy',.12],['flatten',.32],['lockup',.48],['rename',.86]].forEach(([l,v])=>T(ctx,l,X(v),this.gy1+16,{size:9,align:'center',col:C.volt}));
+    ctx.save();ctx.translate(this.gx0-30,this.gy1);ctx.rotate(-Math.PI/2);T(ctx,'COMMITMENT · HEIGHT →',0,0,{size:9,ls:2});ctx.restore();
+    T(ctx,'loyal',this.gx0-6,Y(.95),{size:9,align:'right',col:C.volt});T(ctx,'casual',this.gx0-6,Y(.05),{size:9,align:'right',col:C.volt});
+    this.dots.forEach(d=>{const kind=this.m>=d.thr;d.on+=((kind?1:0)-d.on)*Math.min(1,dt*6);const x=X(d.thr),y=Y(d.c)+Math.sin(this.t*1.5+d.ph)*1.2;
+      ctx.fillStyle=d.on>.5?'rgba(255,'+Math.round(lerp(200,90,d.on))+','+Math.round(lerp(220,80,d.on))+',1)':'rgba(159,214,255,.85)';glow(ctx,d.on>.5?C.red:C.el,8+d.on*10);ctx.beginPath();ctx.arc(x,y,2.4+d.c*2.6,0,7);ctx.fill();noGlow(ctx);});
+    ctx.strokeStyle=C.red;ctx.lineWidth=2;glow(ctx,C.red,18);ctx.beginPath();ctx.moveTo(mx,this.gy0-4);ctx.lineTo(mx,this.gy1+4);ctx.stroke();noGlow(ctx);
+    ctx.fillStyle=C.red;ctx.beginPath();ctx.arc(mx,this.gy0-4,6,0,7);ctx.fill();T(ctx,'THE CHANGE · DRAG',mx+(this.m>.75?-10:10),this.gy0+12,{size:9,col:C.red,align:this.m>.75?'right':'left',ls:1.5});
+    // machine reader diamond
+    const dx=this.gx1-20,dy=this.gy0+22;ctx.save();ctx.translate(dx,dy);ctx.rotate(Math.PI/4);ctx.fillStyle=this.lang?C.red:'#5fe0c0';glow(ctx,this.lang?C.red:'#2fbf9f',16);ctx.fillRect(-6,-6,12,12);noGlow(ctx);ctx.restore();
+    T(ctx,'MACHINE',dx-14,dy+4,{size:9,align:'right',col:this.lang?C.red:'#5fe0c0'});}
+});
+(function(){const cv=th.cv,set=e=>{const p=ptr(e,cv);th.m=clamp((p.x-th.gx0)/(th.gx1-th.gx0),0,1);th.update();};
+  cv.addEventListener('pointerdown',e=>{th.drag=true;cv.setPointerCapture(e.pointerId);set(e);});cv.addEventListener('pointermove',e=>{if(th.drag)set(e);});cv.addEventListener('pointerup',()=>th.drag=false);
+  $$('#thCtrl button[data-p]').forEach(b=>b.onclick=()=>{$$('#thCtrl button[data-p]').forEach(x=>x.classList.toggle('on',x===b));th.preset=b.dataset.p;th.gen();});
+  $$('#thCtrl button[data-c]').forEach(b=>b.onclick=()=>{const to=+b.dataset.c,from=th.m,t0=performance.now();th.lang=!!b.dataset.l;$('#langBtn').classList.toggle('on',th.lang);(function s(){const k=ease((performance.now()-t0)/700);th.m=lerp(from,to,k);th.update();if(k<1)requestAnimationFrame(s);})();});
+  $('#langBtn').onclick=()=>{th.lang=!th.lang;$('#langBtn').classList.toggle('on',th.lang);th.update();};})();
+
+/* =====================================================================
+   VII · THE MARK ON THE BENCH
+   ===================================================================== */
+const mark=reg({cv:$('#markCv'),aspect:.56,seed:1966,
+  S0:{snap:0,uni:0,sup:1,flick:1,trap:1,bevel:1,shadow:1,exapt:0,labels:0,grid:0},
+  gen(){const r=mulberry(this.seed);this.L=[];for(let l=0;l<3;l++){const n=2+(r()<.5?1:0),st=[];for(let k=0;k<n;k++){const p=()=>[(r()-.5)*.9,(r()-.5)*.9];st.push([p(),p(),p(),p()]);}this.L.push(st);}
+    this.cur=Object.assign({},this.S0);this.tgt=Object.assign({},this.S0);this.off=document.createElement('canvas');},
+  resize(){if(!this.L)this.gen();this.off.width=this.cv.width;this.off.height=this.cv.height;},
+  set(o){Object.assign(this.tgt,o);},
+  meters(c){const dist=clamp(.18+.26*c.sup+.12*c.flick+.08*c.trap+.24*(1-c.uni)*(1-c.snap)+.18*c.exapt-.06*c.bevel-.04*c.shadow,0,1);
+    const tfit=clamp(.15+.4*c.snap+.25*c.uni+.12*(1-c.bevel)+.08*(1-c.shadow)-.1*c.sup*(1-c.snap),0,1);
+    const eq=clamp((.26*c.sup+.12*c.flick+.08*c.trap+.24*(1-c.uni)*(1-c.snap)+.2*c.exapt)/(.7),0,1.2);return{dist,tfit,eq};},
+  frame(dt){const{ctx,w,h}=this,c=this.cur,t=this.tgt;for(const k in c)c[k]+=(t[k]-c[k])*Math.min(1,dt*(RM?20:2.6));
+    ctx.clearRect(0,0,w,h);bg(ctx,w,h);
+    const bw=Math.min(w*.22,h*.55),cy=h*.47,cxs=[w/2-bw*1.12,w/2,w/2+bw*1.12];
+    if(c.grid>.01){ctx.strokeStyle='rgba(79,163,255,'+(.25*c.grid)+')';ctx.lineWidth=1;const cs=bw/6;for(let x=w/2-bw*2;x<=w/2+bw*2;x+=cs){ctx.beginPath();ctx.moveTo(x,cy-bw*.7);ctx.lineTo(x,cy+bw*.7);ctx.stroke();}for(let y=cy-bw*.66;y<=cy+bw*.7;y+=cs){ctx.beginPath();ctx.moveTo(w/2-bw*1.9,y);ctx.lineTo(w/2+bw*1.9,y);ctx.stroke();}
+      T(ctx,'THE TEMPLATE GRID',w/2-bw*1.9,cy-bw*.74,{size:9,col:C.volt,ls:2,a:c.grid});}
+    const o=this.off.getContext('2d');o.setTransform(this.dpr,0,0,this.dpr,0,0);o.clearRect(0,0,w,h);
+    const snapP=(p,cx)=>{const cs=1/6;return[lerp(p[0],Math.round(p[0]/cs)*cs,c.snap),lerp(p[1],Math.round(p[1]/cs)*cs,c.snap)];};
+    const tp=(p,cx)=>[cx+p[0]*bw,cy+p[1]*bw];
+    const bez=(P,u)=>{const a=1-u;return[a*a*a*P[0][0]+3*a*a*u*P[1][0]+3*a*u*u*P[2][0]+u*u*u*P[3][0],a*a*a*P[0][1]+3*a*a*u*P[1][1]+3*a*u*u*P[2][1]+u*u*u*P[3][1]];};
+    const strokeShape=(P,base,alpha)=>{const pts=[],L=[],R=[];for(let i=0;i<=48;i++){const u=i/48;pts.push(bez(P,u));}
+      for(let i=0;i<pts.length;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(pts.length-1,i+1)];let tx=b[0]-a[0],ty=b[1]-a[1];const l=Math.hypot(tx,ty)||1;tx/=l;ty/=l;const ang=Math.atan2(ty,tx);
+        const prof=(.35+.95*Math.pow(Math.sin(Math.PI*i/48),.6))*(.55+.75*Math.abs(Math.cos(ang-.7)));const wd=base*lerp(prof,.9,c.uni);L.push([pts[i][0]-ty*wd,pts[i][1]+tx*wd]);R.push([pts[i][0]+ty*wd,pts[i][1]-tx*wd]);}
+      o.beginPath();L.forEach((p,i)=>i?o.lineTo(p[0],p[1]):o.moveTo(p[0],p[1]));for(let i=R.length-1;i>=0;i--)o.lineTo(R[i][0],R[i][1]);o.closePath();o.globalAlpha=alpha;o.fillStyle='#dcefff';o.fill();o.globalAlpha=1;return pts;};
+    const base=bw*.052;let feat={};
+    this.L.forEach((st,l)=>st.forEach((S,k)=>{let P=S.map(p=>snapP(p));if(c.snap>0){const lin=[P[0],[lerp(P[0][0],P[3][0],1/3),lerp(P[0][1],P[3][1],1/3)],[lerp(P[0][0],P[3][0],2/3),lerp(P[0][1],P[3][1],2/3)],P[3]];P=P.map((p,i)=>[lerp(p[0],lin[i][0],c.snap),lerp(p[1],lin[i][1],c.snap)]);}
+      const pts=strokeShape(P.map(p=>tp(p,cxs[l])),base,1);if(l===0&&k===st.length-1)feat.flickAt=pts[pts.length-1];if(l===1&&k===0)feat.trapAt=pts[0];}));
+    if(c.flick>.01&&feat.flickAt){const f=feat.flickAt;strokeShape([f,[f[0]+bw*.12,f[1]+bw*.05],[f[0]+bw*.22,f[1]-bw*.02],[f[0]+bw*.3,f[1]-bw*.16]],base*.55,c.flick);}
+    const supX=cxs[2]+bw*.62,supY=cy-bw*.55;
+    if(c.sup>.01){o.globalAlpha=c.sup;o.strokeStyle='#dcefff';o.lineWidth=base*.55;o.beginPath();o.arc(supX,supY,bw*.09,0,7);o.stroke();o.fillStyle='#dcefff';o.beginPath();o.arc(supX,supY,bw*.035,0,7);o.fill();o.globalAlpha=1;}
+    if(c.trap>.01&&feat.trapAt){o.globalCompositeOperation='destination-out';o.globalAlpha=c.trap;o.beginPath();o.arc(feat.trapAt[0]+base*.3,feat.trapAt[1],base*.55,0,7);o.fill();o.globalAlpha=1;o.globalCompositeOperation='source-over';}
+    if(c.bevel>.01){o.globalCompositeOperation='source-atop';const g=o.createLinearGradient(0,cy-bw*.6,0,cy+bw*.6);g.addColorStop(0,'rgba(255,255,255,'+(.0)+')');g.addColorStop(.42,'rgba(255,255,255,'+(.55*c.bevel)+')');g.addColorStop(.5,'rgba(60,90,160,'+(.55*c.bevel)+')');g.addColorStop(1,'rgba(20,30,80,'+(.6*c.bevel)+')');o.fillStyle=g;o.fillRect(0,0,w,h);o.globalCompositeOperation='source-over';}
+    if(c.shadow>.01){ctx.globalAlpha=.32*c.shadow;ctx.filter&&(ctx.filter='blur(3px)');ctx.drawImage(this.off,bw*.06,bw*.08,w,h);ctx.filter&&(ctx.filter='none');ctx.globalAlpha=1;}
+    glow(ctx,C.el,22);ctx.drawImage(this.off,0,0,w,h);noGlow(ctx);
+    // exaptation: the superscript redeployed as a system
+    if(c.exapt>.01){const n=14;for(let i=0;i<n;i++){const a=this.t*.25+i*2*Math.PI/n;const x=w/2+Math.cos(a)*bw*2.05,y=cy+Math.sin(a)*bw*.82;ctx.strokeStyle='rgba(159,214,255,'+(.8*c.exapt)+')';ctx.lineWidth=2;glow(ctx,C.el,12);ctx.beginPath();ctx.arc(x,y,bw*.05,0,7);ctx.stroke();ctx.fillStyle='rgba(234,245,255,'+c.exapt+')';ctx.beginPath();ctx.arc(x,y,bw*.018,0,7);ctx.fill();noGlow(ctx);}
+      T(ctx,'EXAPTED · the superscript becomes the system\'s motif',w/2,h-12,{size:10,align:'center',col:C.glow,a:c.exapt,ls:1});}
+    if(c.labels>.01){const lab=(x,y,tx,ty,s1,s2,col)=>{ctx.globalAlpha=c.labels;ctx.strokeStyle=col;ctx.lineWidth=1;ctx.setLineDash([2,3]);ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(tx,ty);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,3,0,7);ctx.fill();ctx.globalAlpha=1;
+        T(ctx,s1,tx,ty-3,{size:10,col,align:tx<w/2?'left':'right',a:c.labels,ls:1});T(ctx,s2,tx,ty+11,{size:12,fam:'eb',it:true,col:C.dim,align:tx<w/2?'left':'right',a:c.labels});};
+      if(c.sup>.2)lab(supX,supY,w-12,h*.1,'SUPERSCRIPT · DISTINCTIVE','decades of exposure; the cue no budget can buy',C.glow);
+      if(c.flick>.2&&feat.flickAt)lab(feat.flickAt[0],feat.flickAt[1],12,h*.1,'FLICK · THE HAND\'S IDIOM','lǐ: the grain of a particular making',C.glow);
+      if(c.trap>.2&&feat.trapAt)lab(feat.trapAt[0],feat.trapAt[1],12,h*.9,'INK TRAP · INHERITED','a solved problem that became character',C.glow);
+      if(c.bevel>.2)lab(cxs[2],cy+bw*.1,w-12,h*.9,'BEVEL + SHADOW · HABIT','a 2009 template habit; carries nothing',C.red);}
+    if(!this._mt||this.t-this._mt>.12){this._mt=this.t;const M=this.meters(c);$('#markOut').innerHTML='<span class="code">'+(this.state||'THE MARK AS FOUND')+'</span><div class="kv"><div><b>Distinctiveness</b>'+Math.round(M.dist*100)+'<div class="bar"><i style="width:'+M.dist*100+'%"></i></div></div><div><b>Template fit</b>'+Math.round(M.tfit*100)+'<div class="bar r"><i style="width:'+M.tfit*100+'%"></i></div></div><div><b>Recognition balance kept</b>'+Math.round(Math.min(1,M.eq)*100)+'%<div class="bar"><i style="width:'+Math.min(1,M.eq)*100+'%"></i></div></div></div>'+(this.msg||'Begin with <b>Disclose</b>: find out what each feature carries before you set anything aside.');}}
+});
+(function(){const f=mark;$$('#markFig .ctrl button').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
+  if(a==='disclose'){f.set({labels:1});f.state='DISCLOSED';f.msg='Each feature\'s logic is now visible. The superscript, the flick and the ink trap carry history no competitor can buy. The bevel and drop shadow carry a template\'s habit. Now you can block <i>judiciously</i>.';}
+  if(a==='block'){f.set({bevel:0,shadow:0,labels:1});f.state='BLOCKED JUDICIOUSLY';f.msg='The habits are gone and the distinctive irregularities stay. Template fit rises without spending recognition. This is EFL\'s judicious blocking, and your inventory of the uncopyable put to work.';}
+  if(a==='exapt'){f.set({exapt:1,sup:1,bevel:0,shadow:0});f.state='EXAPTED';f.msg='The underused asset finds an unintended use. The superscript is redeployed as the system\'s motif, so distinctiveness rises above the original. "A list of distinctive assets that exist and are underused" has become the brand\'s new language.';}
+  if(a==='amputate'){f.set({snap:1,uni:1,sup:0,flick:0,trap:0,bevel:0,shadow:0,exapt:0,grid:1,labels:0});f.state='AMPUTATED · THE PLAYBOOK';f.msg='Total blocking, with no disclosure and in service of the grid. Template fit is high and distinctiveness collapses. The mark now slides past at the speed of every other flattened mark. EFL\'s word for blocking everything is hubris.';}
+  if(a==='reset'){f.set(Object.assign({},f.S0));f.state='THE MARK AS FOUND';f.msg='';}
+  if(a==='seed'){f.seed=(Math.random()*1e9)|0;const keep=Object.assign({},f.tgt);f.gen();f.resize();f.tgt=keep;f.cur=Object.assign({},keep);}
+  f._mt=0;});})();
+
+/* =====================================================================
+   X · THREE HANDS
+   ===================================================================== */
+const post=reg({cv:$('#postCv'),aspect:.58,mode:'constructor',leg:false,
+  resize(){const{w,h}=this;this.lx0=w*.14;this.lx1=w*.86;this.ly0=h*.34;this.ly1=h*.92;this.N=18;this.M=14;this.reset();},
+  reset(){this.t=0;this.rows=[];this.wv={rows:[],cur:7,prog:0};let prev=Array.from({length:this.N},()=>Math.random()*2-1);for(let j=0;j<this.M;j++){const r=prev.map((v,i)=>clamp(.62*v+.3*(prev[i+1]??v)+(Math.random()-.5)*.6,-1,1));this.wv.rows.push(r);prev=r;}
+    this.vort=[];for(let k=0;k<260;k++)this.vort.push({r:20+Math.random()*Math.min(this.w,this.h)*.46,a:Math.random()*7,px:0,py:0});
+    const L=[['the brothers',1],['spruce',0],['wind',0],['cloth',0],['birds',0],['a rival',1],['the strategist',1]];this.nodes=L.map(([n,hu],i)=>({n,hu,r:60+i*Math.min(this.w,this.h)*.05,a:i*1.1,tr:[]}));this.update();},
+  update(){const L=this.leg,o=$('#postOut');let s;
+    if(this.mode==='constructor')s=L?'<span class="code">CONSTRUCTOR · LEGIBLE</span><br>The hand has withdrawn, but its tensions can be traced back to it: the pattern carries an address. Shì shows its lǐ. This is the answer to your question in miniature: agency retained in the conditions, and findable when the water turns hard.':'<span class="code">CONSTRUCTOR · SELF-DISSOLVING</span><br>The hand sets the heddles, then rises and fades. The cloth keeps weaving to its arrangement, and the warp brightens as the hand disappears: agency retained in conditions. The participants will say it happened by itself. Switch on <b>Make legible</b>.';
+    if(this.mode==='weaver')s=L?'<span class="code">WEAVER · TENSIONS SHOWN</span><br>The knots light up where each row strained against the one before. The weaver is not a signature on the cloth. The weaver is the tension in the thread.':'<span class="code">WEAVER · CO-ARISING</span><br>Each row is shaped by the row beneath it, and the shuttle\'s colour changes with the cloth it crosses. The weaver cannot withdraw: there is nowhere outside the cloth to stand. The weaver reappears in what is woven whilst weaving.';
+    if(this.mode==='helpmate')s=L?'<span class="code">HELPMATE · ADDRESSES BUILT</span><br>The storm still carries everyone, but the human participants now have rings: they can still be asked. Answerability does not come with the event. It has to be built into it.':'<span class="code">HELPMATE · CONDITIONED</span><br>Flight invents the Wright brothers. Spruce, wind, cloth, birds and rivals are swept through one long event. Agency is real and relational, but there is no obvious address. Switch on <b>Make legible</b> to see what has to be added.';
+    o.innerHTML=s;},
+  frame(dt){const{ctx,w,h}=this;ctx.clearRect(0,0,w,h);bg(ctx,w,h);if(this.mode==='helpmate')return this.storm(dt);
+    const N=this.N,M=this.M,X=i=>lerp(this.lx0,this.lx1,i/(N-1)),gap=(this.ly1-this.ly0)/(M-1),Y=j=>this.ly1-j*gap;
+    if(this.mode==='constructor'){const cyc=16,tc=this.t%cyc,out=ease((tc-2.5)/5),hy=lerp(h*.1,-h*.25,out),ha=1-out,prog=Math.min(M,tc*1.2);
+      ctx.strokeStyle='rgba(79,163,255,'+(.25+.5*out)+')';ctx.lineWidth=1.4;glow(ctx,C.el,6+14*out);for(let i=0;i<N;i++){ctx.beginPath();ctx.moveTo(X(i),this.ly0-gap);ctx.lineTo(X(i),this.ly1+gap*.4);ctx.stroke();}noGlow(ctx);
+      ctx.fillStyle='rgba(79,163,255,'+(.4+.5*out)+')';glow(ctx,C.el,10+20*out);ctx.fillRect(this.lx0-10,this.ly0-gap*1.4,this.lx1-this.lx0+20,4);noGlow(ctx);
+      T(ctx,'THE HEDDLES · THE CONDITIONS',this.lx0-10,this.ly0-gap*1.4-8,{size:9,col:C.volt,ls:1.5,a:.5+.5*out});
+      if(ha>.02){ctx.strokeStyle='rgba(226,52,43,'+(ha*.6)+')';ctx.lineWidth=1;for(let i=0;i<N;i+=3){ctx.beginPath();ctx.moveTo(w/2,hy+12);ctx.lineTo(X(i),this.ly0-gap*1.4);ctx.stroke();}
+        ctx.fillStyle='rgba(226,52,43,'+ha+')';glow(ctx,C.red,24);ctx.beginPath();ctx.arc(w/2,hy,11,0,7);ctx.fill();noGlow(ctx);T(ctx,'THE CONSTRUCTOR',w/2+18,hy+4,{size:10,col:C.red,a:ha,ls:1.5});}
+      for(let j=0;j<Math.floor(prog);j++){ctx.beginPath();for(let i=0;i<N;i++){const y=Y(j)+((i+j)%4<2?3:-3);i?ctx.lineTo(X(i),y):ctx.moveTo(X(i),y);}ctx.strokeStyle='rgba(159,214,255,.9)';ctx.lineWidth=gap*.3;glow(ctx,C.el,10);ctx.stroke();noGlow(ctx);
+        if(this.leg){ctx.setLineDash([2,4]);ctx.strokeStyle='rgba(226,52,43,.55)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(X(0),Y(j));ctx.quadraticCurveTo(this.lx0-w*.1,h*.2,w/2-10,h*.1);ctx.stroke();ctx.setLineDash([]);}}
+      if(this.leg){ctx.setLineDash([4,4]);ctx.strokeStyle=C.red;ctx.lineWidth=1.5;glow(ctx,C.red,14);ctx.beginPath();ctx.arc(w/2,h*.1,13,0,7);ctx.stroke();noGlow(ctx);ctx.setLineDash([]);T(ctx,'THE CONSTRUCTOR · FINDABLE',w/2+20,h*.1+4,{size:10,col:C.red,ls:1.5});T(ctx,'who set this tension?',14,h*.2,{size:14,fam:'eb',it:true,col:'#ffc9c4'});}}
+    else{const wv=this.wv;wv.prog+=dt*(RM?60:20);if(wv.prog>=N){wv.prog=0;wv.cur++;if(wv.cur>=M){const last=wv.rows[M-1];wv.rows.shift();wv.rows.push(last.map((v,i)=>clamp(.62*v+.3*(last[i+1]??v)+(Math.random()-.5)*.6,-1,1)));wv.cur=M-1;}}
+      ctx.strokeStyle='rgba(79,163,255,.3)';ctx.lineWidth=1.2;for(let i=0;i<N;i++){ctx.beginPath();ctx.moveTo(X(i),this.ly0-gap);ctx.lineTo(X(i),this.ly1+gap*.4);ctx.stroke();}
+      for(let j=0;j<=wv.cur;j++){const row=wv.rows[j],lim=j<wv.cur?N-1:wv.prog;ctx.beginPath();for(let s=0;s<=lim;s+=.1){const i=Math.floor(s),f=s-i,v=lerp(row[i],row[Math.min(N-1,i+1)],f);const x=lerp(X(0),X(N-1),s/(N-1)),y=Y(j)+v*gap*.38;s===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+        ctx.strokeStyle='rgba(255,210,150,.9)';ctx.lineWidth=gap*.26;glow(ctx,'#ff9a3c',8);ctx.stroke();noGlow(ctx);
+        if(j>0)for(let i=0;i<=Math.min(N-1,Math.floor(lim));i++){const ten=Math.abs(row[i]-wv.rows[j-1][i]);if(ten>.55){const a=this.leg?1:.35;ctx.fillStyle='rgba(255,240,200,'+a+')';glow(ctx,this.leg?C.red:'#ff9a3c',this.leg?20:6);ctx.beginPath();ctx.arc(X(i),Y(j)+row[i]*gap*.38,this.leg?4:2.4,0,7);ctx.fill();noGlow(ctx);}}
+        if(j===wv.cur){const s=wv.prog,i=Math.floor(Math.min(N-2,s)),v=lerp(row[i],row[i+1],s-i);const x=lerp(X(0),X(N-1),s/(N-1)),y=Y(j)+v*gap*.38;const hue=v>0?'#ffd27a':'#9fd6ff';ctx.fillStyle=hue;glow(ctx,hue,26);ctx.beginPath();ctx.arc(x,y,7,0,7);ctx.fill();noGlow(ctx);T(ctx,'THE WEAVER',x+12,y-10,{size:10,col:hue,ls:1.5});}}
+      if(this.leg)T(ctx,'the weaver is the tension in the thread',w/2,this.ly0-gap*1.6,{size:16,fam:'eb',it:true,align:'center',col:'#ffe3b8',glow:'#ff9a3c'});}},
+  storm(dt){const{ctx,w,h}=this,cx=w/2,cy=h*.52;
+    ctx.fillStyle='rgba(2,4,15,.0)';this.vort.forEach(p=>{const om=1.4*60/(p.r+40);p.a+=om*dt;p.r+=Math.sin(this.t*.6+p.a)*6*dt;const x=cx+Math.cos(p.a)*p.r,y=cy+Math.sin(p.a)*p.r*.62;p.tr=p.tr||[];p.tr.push([x,y]);if(p.tr.length>9)p.tr.shift();ctx.strokeStyle='rgba(159,214,255,'+(.25+.5*(1-p.r/(Math.min(w,h)*.5)))+')';ctx.lineWidth=1.3;ctx.beginPath();p.tr.forEach((q,i)=>i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1]));ctx.stroke();});
+    T(ctx,'FLIGHT · A LONG EVENT, NOT OVER',cx,h*.08,{size:10,align:'center',col:C.volt,ls:2});
+    this.nodes.forEach(n=>{n.a+=1.1*60/(n.r+40)*dt;const x=cx+Math.cos(n.a)*n.r,y=cy+Math.sin(n.a)*n.r*.62;n.tr.push([x,y]);if(n.tr.length>40)n.tr.shift();
+      if(this.leg){ctx.beginPath();n.tr.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.strokeStyle=n.hu?'rgba(226,52,43,.5)':'rgba(159,214,255,.3)';ctx.lineWidth=1.5;ctx.stroke();}
+      ctx.fillStyle=n.hu?'#fff':'#9fd6ff';glow(ctx,n.hu?C.red:C.el,16);ctx.beginPath();ctx.arc(x,y,n.hu?5.5:4,0,7);ctx.fill();noGlow(ctx);
+      if(this.leg&&n.hu){ctx.strokeStyle=C.red;ctx.lineWidth=1.5;ctx.setLineDash([3,3]);ctx.beginPath();ctx.arc(x,y,13+Math.sin(this.t*3)*2,0,7);ctx.stroke();ctx.setLineDash([]);}
+      T(ctx,n.n,x+9,y-8,{size:12,fam:'eb',it:true,col:n.hu?(this.leg?'#ffc9c4':'#fff'):C.dim});
+      if(this.leg)T(ctx,n.hu?'can still be asked':'collaborator',x+9,y+6,{size:8,col:n.hu?C.red:C.dim,ls:1});});}
+});
+(function(){$$('#postFig .ctrl button[data-m]').forEach(b=>b.onclick=()=>{$$('#postFig .ctrl button[data-m]').forEach(x=>x.classList.toggle('on',x===b));post.mode=b.dataset.m;post.reset();});
+  $('#legBtn').onclick=()=>{post.leg=!post.leg;$('#legBtn').classList.toggle('on',post.leg);post.update();};})();
+
+/* =====================================================================
+   XII · 道 理 勢
+   ===================================================================== */
+const dls=reg({cv:$('#dlsCv'),aspect:.62,stakes:40,leg:false,
+  resize(){const{w,h}=this;this.src=[w*.1,h*.14];this.nodes=[];for(let i=0;i<6;i++)this.nodes.push({x:w*(.3+i*.12),y:h*(.72+(i%2)*.1),flash:0,kind:0});this.ps=[];for(let k=0;k<280;k++)this.ps.push(this.spawn(true));this.veins=this.nodes.map(n=>this.vein(this.src,[n.x,n.y]));this.grow=0;this.tal={ans:0,un:0,soft:0};this.update();},
+  spawn(any){const{w,h}=this;return{x:any?Math.random()*w*.8:this.src[0]+(Math.random()-.5)*70,y:any?Math.random()*h:this.src[1]+(Math.random()-.5)*70,life:1,b:(Math.random()-.35)*1.1};},
+  vein(a,b){const pts=[a,b];for(let it=0;it<5;it++){const nw=[pts[0]];for(let i=1;i<pts.length;i++){const p=pts[i-1],q=pts[i],d=Math.hypot(q[0]-p[0],q[1]-p[1]);nw.push([(p[0]+q[0])/2+(Math.random()-.5)*d*.35,(p[1]+q[1])/2+(Math.random()-.5)*d*.35]);nw.push(q);}pts.splice(0,pts.length,...nw);}
+    const br=[];for(let k=0;k<4;k++){const i=4+Math.floor(Math.random()*(pts.length-8)),p=pts[i];const L=[p];let x=p[0],y=p[1],an=Math.random()*7;for(let s=0;s<6;s++){an+=(Math.random()-.5);x+=Math.cos(an)*9;y+=Math.sin(an)*9;L.push([x,y]);}br.push({at:i/pts.length,L});}return{pts,br};},
+  field(x,y){const{w,h}=this;const gx=.62+.25*Math.sin(y*.012+this.t*.2),gy=.8+.2*Math.cos(x*.01);let vx=gx,vy=gy;this.nodes.forEach(n=>{const dx=x-n.x,dy=y-n.y,d=Math.hypot(dx,dy);const low=1-clamp((this.stakes-40)/260,0,1);if(d<60){vx+=dx/d*low*1.6*(1-d/60);vy+=dy/d*low*1.6*(1-d/60);}});return[vx,vy];},
+  update(){const s=this.stakes,o=$('#dlsOut');const hi=s>=160;let txt;
+    if(!hi)txt='At this height shì suffices. The configuration flows and parts around the participants, buoying rather than striking them. Agency retained in conditions does its work unseen, and nobody needs to be found.';
+    else if(!this.leg)txt='The stakes have risen and the same configuration now strikes. Each red ring is an impact with no one to answer for it: shì without lǐ, the ruler who governs by arrangement and is never seen to act.';
+    else txt='Lǐ grows: veins of visible pattern run from the source of the configuration to each participant it reaches. Impacts still happen, but each one is now answerable, and the arrangement can be read back to its arranger. Not visible, but legible.';
+    o.innerHTML='<span class="code">'+(hi?(this.leg?'勢 SHOWS ITS 理':'勢 WITHOUT 理'):'勢 SUFFICES')+' · '+s+' ft</span><div class="kv"><div><b>Parted gently</b>'+this.tal.soft+'</div><div><b>Unanswered impacts</b>'+this.tal.un+'<div class="bar r"><i style="width:'+Math.min(100,this.tal.un)+'%"></i></div></div><div><b>Answered impacts</b>'+this.tal.ans+'<div class="bar"><i style="width:'+Math.min(100,this.tal.ans)+'%"></i></div></div></div>'+txt;},
+  frame(dt){const{ctx,w,h}=this;ctx.clearRect(0,0,w,h);bg(ctx,w,h);
+    T(ctx,'道',w*.56,h*.66,{size:Math.min(w,h)*.7,fam:'zh',w:700,align:'center',col:'rgba(79,163,255,.06)'});
+    let g=ctx.createRadialGradient(this.src[0],this.src[1],0,this.src[0],this.src[1],w*.3);g.addColorStop(0,'rgba(226,52,43,.28)');g.addColorStop(1,'rgba(226,52,43,0)');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    T(ctx,'勢',this.src[0],this.src[1]+18,{size:52,fam:'zh',w:700,align:'center',col:'#fff',glow:C.red,blur:26});
+    const sp=.45+(this.stakes-40)/460*2.6,hi=this.stakes>=160;
+    if(this.leg)this.grow=Math.min(1,this.grow+dt*.5);else this.grow=Math.max(0,this.grow-dt*.8);
+    if(this.grow>0)this.veins.forEach(v=>{const n=Math.floor(v.pts.length*this.grow);ctx.beginPath();for(let i=0;i<n;i++)i?ctx.lineTo(v.pts[i][0],v.pts[i][1]):ctx.moveTo(v.pts[i][0],v.pts[i][1]);ctx.strokeStyle='rgba(191,233,255,.85)';ctx.lineWidth=1.8;glow(ctx,'#7fe0ff',14);ctx.stroke();
+      v.br.forEach(b=>{if(b.at<this.grow){ctx.beginPath();b.L.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.lineWidth=1;ctx.stroke();}});noGlow(ctx);});
+    if(this.grow>.4){const v=this.veins[2],p=v.pts[Math.floor(v.pts.length*.5)];T(ctx,'理',p[0]+18,p[1],{size:36,fam:'zh',w:700,col:'#fff',glow:'#7fe0ff',blur:20,a:(this.grow-.4)/.6});}
+    this.ps.forEach(p=>{let[fx,fy]=this.field(p.x,p.y);fx+=(p.b||0);fy-=(p.b||0)*.35;const ox=p.x,oy=p.y;p.x+=fx*sp*60*dt;p.y+=fy*sp*60*dt;p.life-=dt*.12;
+      ctx.strokeStyle=hi?'rgba(255,150,130,'+(.25+.5*p.life)+')':'rgba(159,214,255,'+(.2+.5*p.life)+')';ctx.lineWidth=hi?1.6:1.1;ctx.beginPath();ctx.moveTo(ox,oy);ctx.lineTo(p.x,p.y);ctx.stroke();
+      for(const n of this.nodes){if(Math.hypot(p.x-n.x,p.y-n.y)<12){if(hi){n.flash=1;n.kind=this.leg?1:2;this.leg?this.tal.ans++:this.tal.un++;}else this.tal.soft++;Object.assign(p,this.spawn(false));if((this.tal.ans+this.tal.un+this.tal.soft)%5===0)this.update();break;}}
+      if(p.x>w||p.y>h||p.life<=0)Object.assign(p,this.spawn(false));});
+    this.nodes.forEach(n=>{ctx.fillStyle='#eaf5ff';glow(ctx,C.el,14);ctx.beginPath();ctx.arc(n.x,n.y,6,0,7);ctx.fill();noGlow(ctx);
+      if(n.flash>0){ctx.strokeStyle=n.kind===1?'rgba(159,214,255,'+n.flash+')':'rgba(226,52,43,'+n.flash+')';ctx.lineWidth=2;glow(ctx,n.kind===1?C.el:C.red,18);ctx.beginPath();ctx.arc(n.x,n.y,8+(1-n.flash)*22,0,7);ctx.stroke();noGlow(ctx);n.flash-=dt*1.6;}});
+    T(ctx,'THE PARTICIPANTS',this.nodes[0].x-10,h*.97,{size:9,col:C.dim,ls:2});
+    T(ctx,this.stakes+' FT',w-14,24,{size:22,fam:'serif',w:700,align:'right',col:hi?'#fff':C.glow,glow:hi?C.red:C.el});
+    T(ctx,hi?(this.leg?'lǐ at five hundred':'shì strikes'):'shì at forty feet',w-14,42,{size:13,fam:'eb',it:true,align:'right',col:C.dim});}
+});
+(function(){const sr=$('#sRange');sr.oninput=()=>{dls.stakes=+sr.value;$('#sVal').textContent=sr.value+' ft';dls.update();};
+  $('#liBtn').onclick=()=>{dls.leg=!dls.leg;$('#liBtn').classList.toggle('on',dls.leg);if(dls.leg)dls.veins=dls.nodes.map(n=>dls.vein(dls.src,[n.x,n.y]));dls.update();};
+  $$('#dlsFig button[data-a="reset"]').forEach(b=>b.onclick=()=>{dls.tal={ans:0,un:0,soft:0};dls.update();});})();
+
+/* =====================================================================
+   XIV · the table, read one account at a time
+   ===================================================================== */
+(function(){const tb=$('#pred');$$('#tbtns button').forEach(b=>b.onclick=()=>{$$('#tbtns button').forEach(x=>x.classList.toggle('on',x===b));const c=b.dataset.col;
+  if(c==='all'){tb.classList.remove('dimmed');$$('#pred td.c').forEach(td=>td.classList.remove('hl'));return;}
+  tb.classList.add('dimmed');$$('#pred tbody tr').forEach(tr=>[...tr.children].forEach((td,i)=>td.classList.toggle('hl',String(i+1)===c)));});})();
+
+/* =====================================================================
+   XVII · your event
+   ===================================================================== */
+(function(){const txt=$('#evText'),out=$('#evOut');let spec=0;
+  const K={S:['serve','audience','customer','client','market','position','scope','strategy','service','merg','acqui','pivot','expand','grew','grow','offer','who we are','mission','business model','new market','consultancy','sector'],
+    L:['name','rename','tagline','descri','call ourselves','word','category','language','strapline','domain','one-liner','what we call'],
+    E:['logo','mark','colour','color','palette','font','type','typeface','icon','wordmark','lockup','visual','design system','grid','flat','look','superscript','identity refresh'],
+    H:['loyal','daily','decades','years','heritage','fans','regular','oldest','long-standing','every day','weekly'],
+    Sp:['evolution','evolve','exciting','thrilled','bold','fresh','journey','reimagin','modern','next chapter','dynamic','vibrant','iconic','unveil','new era','refresh'],
+    Lg:['because','we decided','decided','our board','we chose','reason','so that','signed off','accountable','i chose','named']};
+  const hits=(t,a)=>a.filter(k=>t.toLowerCase().includes(k));
+  const first=(t,a)=>{let m=1e9;a.forEach(k=>{const i=t.toLowerCase().indexOf(k);if(i>=0&&i<m)m=i;});return m;};
+  $('#evScore').onclick=()=>{const t=txt.value;if(!t.trim()){out.innerHTML='Describe a change first. Silence is an event too, but the examiner can\'t score it yet.';return;}
+    const h={};for(const k in K)h[k]=hits(t,K[k]);const S=h.S.length>0,L=h.L.length>0,E=h.E.length>0,H=h.H.length>0;let code=[],m=[];
+    if(S)code.push('S');if(L)code.push('L');if(E)code.push('E');if(H)code.push('H');if(h.Sp.length)code.push('Sp·'+h.Sp.length);if(h.Lg.length)code.push('Lg');
+    if(S&&!E&&!L)m.push('<b>Story without surface.</b> The business has moved but nothing in the identity is being asked to carry it yet. Start with language: is the record still one story, in the buyer\'s words?');
+    if(S&&E&&!L)m.push('<b>Surface answer to a story change.</b> The business has moved, but only the expression is changing. Better typography does not fix a sentence that is no longer true: the name and the description still tell the old story.');
+    else if(S&&(E||L))m.push('<b>Rebrand.</b> The story has moved and the identity is being asked to follow. Audit each element of the bundle: is it doing story work, or riding along?');
+    if(E&&!S&&!L)m.push('<b>Refresh.</b> Expression is changing and the story is said to be still. Protect what makes the mark irreplaceable. Disclose before you block.');
+    if(L&&!S)m.push('<b>Language-led.</b> A change the machine reader will notice first. Make sure the old and new names are unambiguously the same entity everywhere you control.');
+    if(E&&H)m.push('<b>Height warning.</b> You mention committed readers. For them, this expression change arrives at five hundred feet: a change of degree for you may be a change of kind for them.');
+    if(S&&E&&first(t,K.E)<first(t,K.S))m.push('<b>Order.</b> You described the expression before the story. That is the Amputation order: check the story moved before deciding what the mark must do.');
+    if(h.Sp.length)m.push('<b>Spectacle index '+h.Sp.length+'</b> ('+h.Sp.join(', ')+'). These words are lures, not propositions. Ask what each one pulls the reader toward.');
+    m.push(h.Lg.length?'<b>Legible.</b> Someone decided, and the reasons show. Keep them findable after the launch.':'<b>Unaddressed.</b> Nothing here says who decided or why. That is shì without lǐ. Name the hand before the water turns hard.');
+    if(!S&&!L&&!E)m.unshift('No layer recognised yet. Say what moved: what the business is, what it is called, or how it looks.');
+    out.innerHTML='<span class="code">DETERMINANT · '+(code.join(' + ')||'—')+'</span><br>'+m.join('<br>');spec=0;};
+  const lines=['Your change has been noted. Here it is as a launch.','The reveal film is ready. The comments say: "fresh".','Your change is now an image of change. The spectacle has recuperated it.','Nothing you described survives except the word "evolution". Press <b>Détourne</b>.'];
+  const snip=t=>{const s=t.trim().split(/\s+/).slice(0,12).join(' ');return s?s+'…':'our story';};
+  const rel=t=>'Today we\'re thrilled to unveil the next evolution of our brand: "'+snip(t)+'" Bold, fresh and unmistakably us, this new identity marks the start of an exciting journey and a reimagined chapter.';
+  $('#evSpec').onclick=()=>{out.innerHTML='<span class="code">SPECTACLE MODE · ITERATION '+(spec+1)+'</span><br><i>'+rel(txt.value)+'</i><br>'+lines[Math.min(spec,lines.length-1)];spec++;};
+  $('#evDet').onclick=()=>{const D={thrilled:'who decided, and why?',evolution:'what moved: story, language or expression?',Bold:'bold for which reader, at what height?',fresh:'fresh to the casual reader, solid to the loyal one',exciting:'a lure, not a proposition',journey:'which processes converged?',reimagined:'what was disclosed before it was blocked?',unveil:'a pseudo-event, staged to be reported'};
+    let s=rel(txt.value);for(const k in D)s=s.replace(k,'<s>'+k+'</s> <span class="pos">['+D[k]+']</span>');out.innerHTML='<span class="code">DÉTOURNEMENT · THE APPARATUS TURNED ON ITSELF</span><br>'+s+'<br>Every cliché is a place where the construction could have been made legible, and wasn\'t.';};
+  $('#evClear').onclick=()=>{txt.value='';out.innerHTML='';spec=0;};})();
+
+/* ---------- nav highlight ---------- */
+const links=[...document.querySelectorAll('nav.plates a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+window.addEventListener('scroll',()=>{let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<120)cur=i;});links.forEach((l,i)=>l.classList.toggle('on',i===cur));},{passive:true});
+
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
